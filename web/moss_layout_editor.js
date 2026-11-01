@@ -95,6 +95,18 @@ function buildEditor(node, dataWidget) {
     const tplSel = el("select");
     tplSel.append(el("option", { value: "", textContent: "Choose a template (loading...)" }));
     const tplBtn = el("button", { textContent: "Use template" });
+    const tplSaveBtn = el("button", { textContent: "Save as template" });
+    const tplDelBtn = el("button", { textContent: "Delete template", disabled: true });
+    const saveName = el("input", { placeholder: "Template name" });
+    const saveCat = el("select");
+    const saveNewCat = el("input", { placeholder: "New category name" });
+    const saveOk = el("button", { textContent: "Save", className: "on" });
+    const saveCancel = el("button", { textContent: "Cancel" });
+    const saveMsg = el("span", { className: "status" });
+    const newCatLabel = el("label", { style: "display:none" }, "New category", saveNewCat);
+    const saveForm = el("div", { className: "row", style: "display:none" },
+        el("label", {}, "Template name", saveName), el("label", {}, "Category", saveCat), newCatLabel, saveOk, saveCancel);
+    const tplMsg = el("div", { className: "status" });
     const jsonArea = el("textarea", { spellcheck: false });
     const jsonRefresh = el("button", { textContent: "Refresh JSON" });
     const jsonLoad = el("button", { textContent: "Load JSON into editor" });
@@ -128,7 +140,8 @@ function buildEditor(node, dataWidget) {
             el("label", {}, "New box type", typeSel), el("label", {}, "Grid size", gridIn), gridBtn, snapBtn),
         el("label", {}, "Overall scene prompt", scene),
         el("div", { className: "row" }, drawBtn, selBtn, undoBtn, redoBtn, dupBtn, delBtn, clearBtn),
-        el("div", { className: "row" }, el("label", {}, "Templates", tplSel), tplBtn),
+        el("div", { className: "row" }, el("label", {}, "Templates", tplSel), tplBtn, tplSaveBtn, tplDelBtn),
+        saveForm, el("div", { className: "row" }, saveMsg), tplMsg,
         el("div", { className: "main" }, stage, panel),
         status, jsonBox);
 
@@ -419,18 +432,104 @@ function buildEditor(node, dataWidget) {
 
     // ---- templates & JSON import/export ----------------------------------
     let templates = {};
-    api.fetchApi("/moss_layout/templates").then((r) => r.json()).then((catalog) => {
+    let categories = [];
+    const NEW_CAT = "__new__";
+
+    function fillTemplates(catalog, select) {
+        templates = {};
+        categories = catalog.map((c) => ({ id: c.id, name: c.name }));
         tplSel.innerHTML = "";
         tplSel.append(el("option", { value: "", textContent: "Choose a template" }));
         for (const cat of catalog) {
             const group = el("optgroup", { label: cat.name });
             for (const t of cat.templates) {
-                templates[`${cat.id}/${t.id}`] = t.layout;
-                group.append(el("option", { value: `${cat.id}/${t.id}`, textContent: t.name }));
+                const key = `${cat.id}/${t.id}`;
+                templates[key] = t;
+                group.append(el("option", { value: key, textContent: t.user ? `${t.name} (saved)` : t.name }));
             }
             tplSel.append(group);
         }
-    }).catch(() => { tplSel.firstChild.textContent = "Templates unavailable"; });
+        if (select && templates[select]) tplSel.value = select;
+        tplDelBtn.disabled = !templates[tplSel.value]?.user;
+    }
+
+    function loadTemplates(select) {
+        return api.fetchApi("/moss_layout/templates").then((r) => r.json())
+            .then((catalog) => fillTemplates(catalog, select))
+            .catch(() => { tplSel.innerHTML = ""; tplSel.append(el("option", { value: "", textContent: "Templates unavailable" })); });
+    }
+    loadTemplates();
+    // Other editor nodes refresh their lists when one saves or deletes a template.
+    const onCatalogChanged = () => loadTemplates(tplSel.value);
+    window.addEventListener("moss-templates-changed", onCatalogChanged);
+    root._dispose = () => window.removeEventListener("moss-templates-changed", onCatalogChanged);
+
+    tplSel.onchange = () => { tplDelBtn.disabled = !templates[tplSel.value]?.user; tplMsg.textContent = ""; };
+
+    function openSaveForm() {
+        saveCat.innerHTML = "";
+        for (const c of categories) saveCat.append(el("option", { value: c.id, textContent: c.name }));
+        saveCat.append(el("option", { value: NEW_CAT, textContent: "+ New category..." }));
+        const current = templates[tplSel.value];
+        const [curCat] = tplSel.value.split("/");
+        if (current?.user) { saveName.value = current.name; saveCat.value = curCat; }
+        else { saveName.value = ""; if (curCat && categories.some((c) => c.id === curCat)) saveCat.value = curCat; }
+        if (!categories.length) saveCat.value = NEW_CAT;
+        saveNewCat.value = "";
+        newCatLabel.style.display = saveCat.value === NEW_CAT ? "" : "none";
+        saveMsg.textContent = "";
+        saveForm.style.display = "";
+        saveName.focus();
+    }
+    const closeSaveForm = () => { saveForm.style.display = "none"; };
+    saveCat.onchange = () => { newCatLabel.style.display = saveCat.value === NEW_CAT ? "" : "none"; };
+    tplSaveBtn.onclick = () => (saveForm.style.display === "none" ? openSaveForm() : closeSaveForm());
+    saveCancel.onclick = () => { closeSaveForm(); saveMsg.textContent = ""; };
+
+    async function postTemplate(overwrite) {
+        const body = {
+            name: saveName.value.trim(),
+            layout: { width: state.width, height: state.height, bbox_coord_space: "abs", bbox_format: "xyxy", summary: state.summary, items: state.items },
+            overwrite,
+        };
+        if (saveCat.value === NEW_CAT) body.new_category = saveNewCat.value.trim();
+        else body.category = saveCat.value;
+        const res = await api.fetchApi("/moss_layout/templates", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+        return { status: res.status, data: await res.json().catch(() => ({})) };
+    }
+
+    saveOk.onclick = async () => {
+        const name = saveName.value.trim();
+        if (!name) { saveMsg.textContent = "Enter a template name."; return; }
+        if (saveCat.value === NEW_CAT && !saveNewCat.value.trim()) { saveMsg.textContent = "Enter a category name."; return; }
+        saveMsg.textContent = "Saving...";
+        try {
+            let r = await postTemplate(false);
+            if (r.status === 409) {
+                if (!confirm(`${r.data.error} Replace it?`)) { saveMsg.textContent = "Not saved."; return; }
+                r = await postTemplate(true);
+            }
+            if (r.status !== 200) { saveMsg.textContent = `Could not save: ${r.data.error || r.status}`; return; }
+            closeSaveForm();
+            saveMsg.textContent = "";
+            await loadTemplates(`${r.data.category}/${r.data.id}`);
+            tplMsg.textContent = `Saved "${name}".`;
+            window.dispatchEvent(new Event("moss-templates-changed"));
+        } catch (e) {
+            saveMsg.textContent = `Could not save: ${e.message}`;
+        }
+    };
+
+    tplDelBtn.onclick = async () => {
+        const t = templates[tplSel.value];
+        if (!t?.user || !confirm(`Delete saved template "${t.name}"? This cannot be undone.`)) return;
+        const res = await api.fetchApi(`/moss_layout/templates/${tplSel.value}`, { method: "DELETE" });
+        const data = await res.json().catch(() => ({}));
+        if (res.status !== 200) { tplMsg.textContent = `Could not delete: ${data.error || res.status}`; return; }
+        await loadTemplates();
+        tplMsg.textContent = `Deleted "${t.name}".`;
+        window.dispatchEvent(new Event("moss-templates-changed"));
+    };
 
     // Accepts the editor draft (abs/xyxy) or the model prompt (abs_centralized/yxyx).
     function layoutToState(src) {
@@ -466,9 +565,10 @@ function buildEditor(node, dataWidget) {
     }
 
     tplBtn.onclick = () => {
-        const layout = templates[tplSel.value];
-        if (!layout) return;
-        applyState(layoutToState(layout));
+        const t = templates[tplSel.value];
+        if (!t) return;
+        applyState(layoutToState(t.layout));
+        tplMsg.textContent = "";
     };
     const refreshJson = () => { jsonArea.value = JSON.stringify({ width: state.width, height: state.height, bbox_coord_space: "abs", bbox_format: "xyxy", summary: state.summary, items: state.items }, null, 2); jsonMsg.textContent = ""; };
     jsonRefresh.onclick = refreshJson;
@@ -518,6 +618,11 @@ app.registerExtension({
             this.widgets.unshift(...this.widgets.splice(idx, 1));
             this.setSize([860, 960]);
             return r;
+        };
+        const onRemoved = nodeType.prototype.onRemoved;
+        nodeType.prototype.onRemoved = function () {
+            this._mossRoot?._dispose?.();
+            return onRemoved?.apply(this, arguments);
         };
         const onConfigure = nodeType.prototype.onConfigure;
         nodeType.prototype.onConfigure = function () {

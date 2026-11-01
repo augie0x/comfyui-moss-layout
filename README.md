@@ -22,6 +22,8 @@ The visual editor is built into the node:
 - *Draw boxes* by dragging; *Select* to move/resize. Side panel: type (Object / Character / Text), region prompt, exact visible text.
 - Undo, redo, duplicate, delete, clear.
 - 45 bundled templates (same as the Space) via the Templates dropdown.
+- Your own templates: *Save as template* stores the current layout under a name, in an existing category or a new one. Saved templates appear in the same Templates list, marked "(saved)". *Delete template* removes a saved template; bundled templates cannot be deleted.
+  Saved templates are kept in `ComfyUI/user/moss_layout/templates/`, so updating or reinstalling the node does not remove them.
 - Layout JSON panel: view/edit the draft, load JSON back (accepts the editor draft or a centralized yxyx model prompt).
 
 Generation settings on the node: diffusion model, text encoder, VAE, optional LoRA and strength, steps, cfg, shift (default 5), sampler, scheduler and seed.

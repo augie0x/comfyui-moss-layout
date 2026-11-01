@@ -18,10 +18,11 @@ import folder_paths
 import nodes
 from comfy_extras.nodes_model_advanced import ModelSamplingSD3
 
+from . import templates_store
+
 MIN_EDGE = 256
 MAX_PIXELS = 1_572_864
 LATENT_CHANNELS = 128  # Flux2 latent format, 16x downscale
-TEMPLATE_DIR = pathlib.Path(__file__).parent / "templates"
 DEFAULT_LAYOUT = json.dumps({"width": 1024, "height": 1024, "summary": {"caption": ""}, "items": []})
 
 
@@ -153,32 +154,44 @@ class MossLayoutGenerate:
 
 
 # ---------------------------------------------------------------------------
-# Template catalogue for the editor UI
+# Template catalogue routes for the editor UI
 # ---------------------------------------------------------------------------
 
-def load_templates():
-    catalog = []
-    folders = sorted(p for p in TEMPLATE_DIR.iterdir() if p.is_dir()) if TEMPLATE_DIR.exists() else []
-    for folder in folders:
-        entries = []
-        for path in sorted(folder.glob("*.json")):
-            try:
-                layout = json.loads(path.read_text(encoding="utf-8"))
-            except (OSError, json.JSONDecodeError):
-                continue
-            entries.append({"id": path.stem, "name": path.stem.replace("_", " ").title(), "layout": layout})
-        if entries:
-            catalog.append({"id": folder.name, "name": folder.name.replace("_", " ").title(), "templates": entries})
-    return catalog
-
+USER_TEMPLATE_DIR = pathlib.Path(folder_paths.get_user_directory()) / "moss_layout" / "templates"
 
 try:
     from aiohttp import web
     from server import PromptServer
 
-    @PromptServer.instance.routes.get("/moss_layout/templates")
-    async def _templates(request):
-        return web.json_response(load_templates())
+    routes = PromptServer.instance.routes
+
+    @routes.get("/moss_layout/templates")
+    async def _list_templates(request):
+        return web.json_response(templates_store.load_catalog(USER_TEMPLATE_DIR))
+
+    @routes.post("/moss_layout/templates")
+    async def _save_template(request):
+        try:
+            body = await request.json()
+            saved = templates_store.save_template(
+                USER_TEMPLATE_DIR, body.get("name"), body.get("layout"),
+                category=body.get("category"), new_category=body.get("new_category"),
+                overwrite=bool(body.get("overwrite")))
+        except FileExistsError as exc:
+            return web.json_response({"error": str(exc)}, status=409)
+        except (ValueError, AttributeError) as exc:
+            return web.json_response({"error": str(exc)}, status=400)
+        return web.json_response(saved)
+
+    @routes.delete("/moss_layout/templates/{category}/{template_id}")
+    async def _delete_template(request):
+        try:
+            templates_store.delete_template(USER_TEMPLATE_DIR, request.match_info["category"], request.match_info["template_id"])
+        except FileNotFoundError as exc:
+            return web.json_response({"error": str(exc)}, status=404)
+        except ValueError as exc:
+            return web.json_response({"error": str(exc)}, status=400)
+        return web.json_response({"deleted": True})
 except ImportError:  # running outside ComfyUI
     pass
 
