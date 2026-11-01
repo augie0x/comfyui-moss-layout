@@ -1,10 +1,18 @@
 # ComfyUI MOSS Layout
 
 ComfyUI port of the [moss-layout-studio](https://huggingface.co/spaces/Curry-Sawce/moss-layout-studio) Space (Apache-2.0), as a single node.
-Base model `OpenMOSS-Team/MOSS-Image-SFT` (~27 GB, downloaded on first run) plus the 4-step Turbo LoRA `akhaliq/MOSS-Image-SFT-4-steps`.
+It uses ComfyUI's built-in MOSS-Image support and the model files already in your ComfyUI `models` folders. Nothing is downloaded.
+
+## Requirements
+- A ComfyUI version with native MOSS-Image support (0.42 or later).
+- Model files:
+  - `models/diffusion_models`: MOSS-Image SFT (e.g. `mossImage_sft_bf16.safetensors`)
+  - `models/text_encoders`: Qwen3.5-9B text encoder for MOSS-Image
+  - `models/vae`: Flux 2 VAE (e.g. `flux2-vae.safetensors`)
+  - `models/loras` (optional): a speed LoRA, e.g. the 4-step Turbo LoRA from `akhaliq/MOSS-Image-SFT-4-steps`
 
 ## Install
-Copy this folder to `ComfyUI/custom_nodes/`, run `pip install -r requirements.txt` in ComfyUI's Python environment, restart ComfyUI and hard-refresh the browser tab.
+Copy this folder to `ComfyUI/custom_nodes/`, restart ComfyUI and hard-refresh the browser tab.
 
 ## Node: MOSS Layout Generate (category "MOSS Layout")
 The visual editor is built into the node:
@@ -13,7 +21,7 @@ The visual editor is built into the node:
 - Undo, redo, duplicate, delete, clear.
 - 45 bundled templates (same as the Space) via the Templates dropdown.
 - Layout JSON panel: view/edit the draft, load JSON back (accepts the editor draft or a centralized yxyx model prompt).
-- Generation settings on the node: Turbo LoRA, CPU offload, steps, cfg, shift, seed (use ComfyUI's seed "randomize" control for random seeds).
-- Outputs `image` and `compiled_prompt` (the JSON prompt sent to the model).
 
-Boxes are stored as absolute pixels from the top-left and converted to the centred `yxyx` format MOSS expects.
+Generation settings on the node: diffusion model, text encoder, VAE, optional LoRA and strength, steps, cfg, shift (default 5), sampler, scheduler and seed.
+With a 4-step LoRA use 4 steps and cfg 1.0; without a LoRA use more steps.
+Outputs `image` and `compiled_prompt` (the JSON prompt sent to the model).

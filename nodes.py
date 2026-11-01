@@ -1,69 +1,35 @@
 """ComfyUI node for MOSS-Image layout-to-image generation.
 
 Port of the Curry-Sawce/moss-layout-studio Space (Apache-2.0). One node holds
-the visual box editor (web/moss_layout_editor.js) and runs generation: boxes
-are compiled to the centralized-yxyx JSON prompt MOSS-Image expects, and the
-4-step Turbo LoRA is applied to the transformer.
+the visual box editor (web/moss_layout_editor.js) and runs generation with
+ComfyUI's native MOSS-Image support: the diffusion model, text encoder, VAE and
+optional LoRA are picked from the ComfyUI models folders, nothing is downloaded.
 """
 
 import json
 import math
 import pathlib
 
-import numpy as np
 import torch
-from torch import nn
 
-MODEL_REPO = "OpenMOSS-Team/MOSS-Image-SFT"
-LORA_REPO = "akhaliq/MOSS-Image-SFT-4-steps"
-LORA_TARGETS = ("q", "k", "v", "o", "ffn_up_gate", "ffn_down")
-LORA_RANK = 128
+import comfy.model_management
+import comfy.samplers
+import folder_paths
+import nodes
+from comfy_extras.nodes_model_advanced import ModelSamplingSD3
+
 MIN_EDGE = 256
 MAX_PIXELS = 1_572_864
+LATENT_CHANNELS = 128  # Flux2 latent format, 16x downscale
 TEMPLATE_DIR = pathlib.Path(__file__).parent / "templates"
 DEFAULT_LAYOUT = json.dumps({"width": 1024, "height": 1024, "summary": {"caption": ""}, "items": []})
 
 
-# ---------------------------------------------------------------------------
-# Turbo LoRA (the custom pipeline has no diffusers LoRA mixin)
-# ---------------------------------------------------------------------------
-
-class LoRALinear(nn.Module):
-    def __init__(self, base, rank, alpha):
-        super().__init__()
-        self.base = base
-        for p in self.base.parameters():
-            p.requires_grad_(False)
-        self.lora_down = nn.Linear(base.in_features, rank, bias=False)
-        self.lora_up = nn.Linear(rank, base.out_features, bias=False)
-        self.rank, self.alpha = rank, alpha
-
-    @property
-    def weight(self):
-        return self.base.weight
-
-    def forward(self, x):
-        out = self.base(x)
-        delta = self.lora_up(self.lora_down(x.to(self.lora_down.weight.dtype)))
-        return out + (delta * (self.alpha / self.rank)).to(out.dtype)
-
-
-def apply_turbo_lora(transformer, strength=1.0):
-    from huggingface_hub import hf_hub_download
-    from safetensors.torch import load_file
-
-    for layer in transformer.layers:
-        for name in LORA_TARGETS:
-            layer.proj[name] = LoRALinear(layer.proj[name], LORA_RANK, LORA_RANK * strength)
-    sd = load_file(hf_hub_download(LORA_REPO, "lora.safetensors"))
-    for i, layer in enumerate(transformer.layers):
-        for name in LORA_TARGETS:
-            m = layer.proj[name]
-            key = f"diffusion_model.layers.{i}.proj.{name}"
-            m.lora_down.weight.data.copy_(sd[f"{key}.lora_down.weight"])
-            m.lora_up.weight.data.copy_(sd[f"{key}.lora_up.weight"])
-            m.alpha = float(sd[f"{key}.alpha"]) * strength
-    return transformer
+def _files(folder, *prefer):
+    """Filenames in a models folder; the default is the first name containing all of `prefer`."""
+    names = folder_paths.get_filename_list(folder)
+    default = next((n for n in names if all(p in n.lower() for p in prefer)), names[0] if names else None)
+    return names, default
 
 
 # ---------------------------------------------------------------------------
@@ -122,17 +88,26 @@ def compile_layout(state):
 # ---------------------------------------------------------------------------
 
 class MossLayoutGenerate:
-    _pipes = {}
+    _cache = {}
 
     @classmethod
     def INPUT_TYPES(cls):
+        unets, unet_default = _files("diffusion_models", "moss")
+        tes, te_default = _files("text_encoders", "moss", "qwen3.5")
+        vaes, vae_default = _files("vae", "flux2")
+        loras = ["None"] + folder_paths.get_filename_list("loras")
         return {"required": {
             "layout_json": ("STRING", {"multiline": True, "default": DEFAULT_LAYOUT}),
-            "turbo_lora": ("BOOLEAN", {"default": True}),
-            "offload": (["model_cpu_offload", "none"], {"default": "model_cpu_offload"}),
-            "steps": ("INT", {"default": 4, "min": 1, "max": 100}),
+            "diffusion_model": (unets, {"default": unet_default}),
+            "text_encoder": (tes, {"default": te_default}),
+            "vae": (vaes, {"default": vae_default}),
+            "lora": (loras, {"default": "None", "tooltip": "Optional speed LoRA, e.g. the MOSS-Image-SFT 4-step Turbo LoRA."}),
+            "lora_strength": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
+            "steps": ("INT", {"default": 4, "min": 1, "max": 200}),
             "cfg": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 20.0, "step": 0.1}),
-            "shift": ("FLOAT", {"default": 5.0, "min": 1.0, "max": 10.0, "step": 0.1}),
+            "shift": ("FLOAT", {"default": 5.0, "min": 0.0, "max": 100.0, "step": 0.1}),
+            "sampler_name": (comfy.samplers.KSampler.SAMPLERS, {"default": "euler"}),
+            "scheduler": (comfy.samplers.KSampler.SCHEDULERS, {"default": "simple"}),
             "seed": ("INT", {"default": 0, "min": 0, "max": 0xFFFFFFFFFFFFFFFF}),
         }}
 
@@ -141,45 +116,40 @@ class MossLayoutGenerate:
     FUNCTION = "generate"
     CATEGORY = "MOSS Layout"
 
-    def _pipe(self, turbo_lora, offload):
-        key = (turbo_lora, offload)
-        if key not in self._pipes:
-            self._pipes.clear()
-            torch.cuda.empty_cache()
-            from diffusers import DiffusionPipeline
-            pipe = DiffusionPipeline.from_pretrained(
-                MODEL_REPO, custom_pipeline="pipeline_moss_image", trust_remote_code=True,
-                torch_dtype={"default": torch.bfloat16, "vae": torch.float32},
-            )
-            if turbo_lora:
-                apply_turbo_lora(pipe.transformer)
-            if offload == "model_cpu_offload":
-                pipe.enable_model_cpu_offload()
-            else:
-                pipe.to("cuda" if torch.cuda.is_available() else "cpu")
-            self._pipes[key] = pipe
-        return self._pipes[key]
+    def _load(self, kind, name, loader):
+        key = (kind, name)
+        if key not in self._cache:
+            for old in [k for k in self._cache if k[0] == kind]:
+                del self._cache[old]
+            self._cache[key] = loader()
+        return self._cache[key]
 
-    def generate(self, layout_json, turbo_lora, offload, steps, cfg, shift, seed):
+    def generate(self, layout_json, diffusion_model, text_encoder, vae, lora, lora_strength,
+                 steps, cfg, shift, sampler_name, scheduler, seed):
         try:
             state = json.loads(layout_json)
         except json.JSONDecodeError as exc:
             raise ValueError(f"Layout data is invalid: {exc}") from exc
         prompt = compile_layout(state)
         width, height = int(state["width"]), int(state["height"])
-        pipe = self._pipe(turbo_lora, offload)
-        pipe.scheduler = type(pipe.scheduler).from_config(pipe.scheduler.config, shift=float(shift))
-        image = pipe(
-            prompt,
-            height=height,
-            width=width,
-            num_inference_steps=steps,
-            guidance_scale=float(cfg),
-            uncond_skip_layers=[22],
-            generator=torch.Generator("cpu").manual_seed(seed % (2 ** 32)),
-        ).images[0]
-        tensor = torch.from_numpy(np.asarray(image.convert("RGB")).astype(np.float32) / 255.0)[None]
-        return (tensor, prompt)
+
+        model = self._load("unet", diffusion_model, lambda: nodes.UNETLoader().load_unet(diffusion_model, "default")[0])
+        clip = self._load("clip", text_encoder, lambda: nodes.CLIPLoader().load_clip(text_encoder, type="moss_image")[0])
+        vae_model = self._load("vae", vae, lambda: nodes.VAELoader().load_vae(vae)[0])
+
+        if lora != "None" and lora_strength != 0:
+            model = nodes.LoraLoaderModelOnly().load_lora_model_only(model, lora, lora_strength)[0]
+        model = ModelSamplingSD3().patch(model, shift, multiplier=1.0)[0]
+
+        encode = nodes.CLIPTextEncode().encode
+        positive = encode(clip, prompt)[0]
+        negative = encode(clip, "")[0]
+        latent = {"samples": torch.zeros([1, LATENT_CHANNELS, height // 16, width // 16],
+                                         device=comfy.model_management.intermediate_device())}
+        samples = nodes.common_ksampler(model, seed, steps, cfg, sampler_name, scheduler,
+                                        positive, negative, latent)[0]
+        image = nodes.VAEDecode().decode(vae_model, samples)[0]
+        return (image, prompt)
 
 
 # ---------------------------------------------------------------------------
