@@ -1,0 +1,88 @@
+{
+  "width": 1024,
+  "height": 1024,
+  "summary": {
+    "meta": [
+      "generative campaigns",
+      "Impossible high-energy product photography"
+    ],
+    "canvas": "single",
+    "caption": "Bold square luxury beverage campaign on a deep ultramarine studio background, frozen high-speed motion, crisp commercial photography, electric citrus yellow and cobalt palette, glossy reflections, controlled chaos and premium art direction."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Bold compact acid-yellow modern sans-serif brand lettering centred at the top.",
+      "bbox": [
+        -470,
+        -210,
+        -390,
+        210
+      ],
+      "text": "VOLT / CITRUS"
+    },
+    {
+      "label": "object",
+      "caption": "Hero cobalt-blue sculptural glass beverage bottle with a simple lightning symbol, upright and sharply lit, condensation droplets, no additional label text.",
+      "bbox": [
+        -260,
+        -150,
+        260,
+        150
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "A cluster of sliced lemons and translucent citrus wheels frozen in motion in the upper-left, bright yellow pulp and flying droplets.",
+      "bbox": [
+        -330,
+        -470,
+        -80,
+        -210
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Long glossy green citrus leaves twisting through the upper-right air with tiny beads of water.",
+      "bbox": [
+        -350,
+        220,
+        -70,
+        470
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "A dramatic ribbon of sparkling clear liquid curling upward from the lower-left, frozen splash crown and suspended droplets.",
+      "bbox": [
+        40,
+        -470,
+        350,
+        -190
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Faceted translucent yellow mineral shards and glowing bubbles exploding outward in the lower-right.",
+      "bbox": [
+        70,
+        200,
+        370,
+        470
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small widely tracked white uppercase campaign line centred along the bottom edge.",
+      "bbox": [
+        410,
+        -210,
+        475,
+        210
+      ],
+      "text": "ENERGY, DISTILLED"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

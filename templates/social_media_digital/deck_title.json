@@ -1,0 +1,80 @@
+{
+  "width": 1280,
+  "height": 720,
+  "summary": {
+    "meta": [
+      "presentations",
+      "Orbital greenhouse future-systems title slide"
+    ],
+    "canvas": "single",
+    "caption": "Cinematic presentation title slide featuring a luminous orbital greenhouse above Earth, balancing ambitious worldbuilding with restrained executive typography and a precise data-interface accent system."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Ultra-wide cinematic view of an elegant ring-shaped orbital greenhouse floating above Earth at blue hour, visible forests and water inside the transparent ring, tiny service craft for scale, physically plausible light, premium science-documentary realism.",
+      "bbox": [
+        -340,
+        -10,
+        340,
+        620
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small ice-blue uppercase studio and date marker in the upper-left.",
+      "bbox": [
+        -305,
+        -600,
+        -255,
+        -80
+      ],
+      "text": "NORTH / FUTURES  —  2027"
+    },
+    {
+      "label": "text",
+      "caption": "Large mineral-white geometric title stacked on the dark left side, clean and authoritative.",
+      "bbox": [
+        -205,
+        -600,
+        20,
+        25
+      ],
+      "text": "DESIGNING\nFOR CLOSED\nLOOPS"
+    },
+    {
+      "label": "text",
+      "caption": "Compact fluorescent-mint proposition beneath the title.",
+      "bbox": [
+        90,
+        -590,
+        150,
+        15
+      ],
+      "text": "WHEN EVERY OUTPUT BECOMES AN INPUT"
+    },
+    {
+      "label": "object",
+      "caption": "Fine mint orbital path, tiny coordinate marks and three restrained data labels overlaying empty space around the station, sophisticated aerospace interface graphic.",
+      "bbox": [
+        -290,
+        0,
+        300,
+        610
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Tiny pale-blue confidentiality and slide marker at lower-left.",
+      "bbox": [
+        270,
+        -590,
+        315,
+        -130
+      ],
+      "text": "STRATEGY DECK  /  01"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

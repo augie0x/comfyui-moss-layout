@@ -1,0 +1,68 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "cinematic key art",
+      "Mythic action game cover"
+    ],
+    "canvas": "single",
+    "caption": "Epic dark-fantasy action game cover, volcanic cathedral ruins beneath a black-red eclipse, two opponents locked in a diagonal confrontation, airborne ash, molten gold highlights, deep charcoal shadows and premium painterly key-art finish."
+  },
+  "items": [
+    {
+      "label": "character",
+      "caption": "Lower-left foreground: battle-worn female knight in blackened silver armour, torn crimson cape and glowing sun-sword raised toward the enemy, dynamic full-body three-quarter pose.",
+      "bbox": [
+        -60,
+        -360,
+        455,
+        -25
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Upper-right: towering antlered ash king in fractured obsidian armour, enormous silhouette descending through smoke with a molten spear, menacing full figure.",
+      "bbox": [
+        -430,
+        20,
+        160,
+        365
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "A blazing black-red eclipse ring at the upper centre, showering sparks through the ruined cathedral and visually separating the opponents.",
+      "bbox": [
+        -470,
+        -125,
+        -175,
+        125
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Huge weathered ivory fantasy game title stacked across the lower centre.",
+      "bbox": [
+        315,
+        -325,
+        475,
+        325
+      ],
+      "text": "ASHEN\nCROWN"
+    },
+    {
+      "label": "text",
+      "caption": "Tiny gold uppercase release line at the bottom.",
+      "bbox": [
+        490,
+        -210,
+        530,
+        210
+      ],
+      "text": "THE ECLIPSE BEGINS"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

@@ -1,0 +1,80 @@
+{
+  "width": 1024,
+  "height": 1024,
+  "summary": {
+    "meta": [
+      "social media",
+      "Exploded transparent-audio product launch"
+    ],
+    "canvas": "single",
+    "caption": "High-concept square product announcement showing transparent wireless headphones floating in an exploded assembly, with visible acoustic components transformed into luminous sound waves and bold launch typography."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Small fluorescent-lime uppercase launch marker in the top-left.",
+      "bbox": [
+        -465,
+        -450,
+        -405,
+        130
+      ],
+      "text": "INTRODUCING / AUDIO 01"
+    },
+    {
+      "label": "text",
+      "caption": "Huge ice-white condensed product name extending across the upper half, cropped confidently at the right edge.",
+      "bbox": [
+        -385,
+        -455,
+        -175,
+        470
+      ],
+      "text": "HEAR\nEVERYTHING"
+    },
+    {
+      "label": "object",
+      "caption": "Premium transparent over-ear headphones floating diagonally in an exploded technical assembly: clear shell, cobalt drivers, brushed aluminium rings and soft mesh cushions separated in precise layers, dramatic black-violet studio space, razor-sharp commercial rendering.",
+      "bbox": [
+        -250,
+        -360,
+        330,
+        410
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Electric-lime sound waves flowing out of the exposed drivers and transforming into translucent ribbons that wrap around the product, luminous particles and controlled motion.",
+      "bbox": [
+        -260,
+        -420,
+        390,
+        455
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Strong compact white feature line on the lower-left.",
+      "bbox": [
+        335,
+        -440,
+        395,
+        170
+      ],
+      "text": "TRANSPARENT SOUND  /  40-HOUR AIR"
+    },
+    {
+      "label": "text",
+      "caption": "Black uppercase call-to-action inside a fluorescent-lime bottom capsule.",
+      "bbox": [
+        420,
+        -440,
+        475,
+        180
+      ],
+      "text": "AVAILABLE 09.27  →"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

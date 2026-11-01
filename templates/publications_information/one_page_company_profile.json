@@ -1,0 +1,81 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "business information",
+      "Cutaway studio ecosystem company profile"
+    ],
+    "canvas": "single",
+    "caption": "Editorial one-page company profile built around a spectacular architectural cutaway of a multidisciplinary design studio, with people, prototypes and workflows connected by a bright signal line, supported by bold facts and disciplined Swiss typography."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Compact black geometric wordmark in the upper-left corner with a vivid signal-red dot.",
+      "bbox": [
+        -505,
+        -340,
+        -445,
+        -65
+      ],
+      "text": "NORTH / STUDIO"
+    },
+    {
+      "label": "text",
+      "caption": "Large black condensed headline on warm off-white, broken into an assertive three-line stack.",
+      "bbox": [
+        -430,
+        -330,
+        -255,
+        330
+      ],
+      "text": "WE MAKE\nCOMPLEX THINGS\nFEEL HUMAN"
+    },
+    {
+      "label": "object",
+      "caption": "Precise axonometric cutaway of a three-level creative studio with tiny diverse teams researching, prototyping, filming and testing; pale timber, cobalt machinery, indoor trees and one continuous signal-red route connecting every floor, premium architectural illustration.",
+      "bbox": [
+        -220,
+        -340,
+        205,
+        340
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small black uppercase section label in a red capsule.",
+      "bbox": [
+        230,
+        -325,
+        280,
+        -75
+      ],
+      "text": "HOW WE WORK"
+    },
+    {
+      "label": "text",
+      "caption": "Three bold oversized cobalt metrics arranged as a clean horizontal data strip.",
+      "bbox": [
+        300,
+        -325,
+        385,
+        325
+      ],
+      "text": "12 DISCIPLINES     06 CITIES     01 SHARED METHOD"
+    },
+    {
+      "label": "text",
+      "caption": "Concise charcoal company statement in two balanced columns.",
+      "bbox": [
+        405,
+        -325,
+        480,
+        325
+      ],
+      "text": "Research reveals the system. Design makes it useful. Craft makes it memorable.\nStrategy  /  Products  /  Places  /  Stories"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

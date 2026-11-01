@@ -1,0 +1,91 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "invitations",
+      "Moonlit glasshouse wedding invitation"
+    ],
+    "canvas": "single",
+    "caption": "Romantic contemporary wedding invitation depicting a moonlit botanical glasshouse as an intricate layered paper diorama, with two tiny silhouetted figures, silver foil linework and refined ivory typography on deep forest green."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Tall arched Victorian glasshouse at night rendered as a dimensional cut-paper diorama, glowing windows, layered tropical foliage, deep forest green, moonlit blue and silver foil outlines, two tiny figures meeting inside.",
+      "bbox": [
+        -510,
+        -345,
+        245,
+        345
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Fine silver-foil crescent moon, scattered stars and climbing jasmine forming an asymmetrical border around the glasshouse, delicate tactile shadows.",
+      "bbox": [
+        -490,
+        -330,
+        480,
+        330
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small widely tracked ivory uppercase family line following the upper arch.",
+      "bbox": [
+        -455,
+        -255,
+        -395,
+        255
+      ],
+      "text": "TOGETHER WITH THEIR FAMILIES"
+    },
+    {
+      "label": "text",
+      "caption": "Large luminous ivory high-contrast serif names with an elegant italic ampersand, centred across the glasshouse doorway.",
+      "bbox": [
+        -95,
+        -310,
+        75,
+        310
+      ],
+      "text": "Amelia & James"
+    },
+    {
+      "label": "text",
+      "caption": "Refined silver uppercase invitation line, centred with generous spacing.",
+      "bbox": [
+        135,
+        -260,
+        205,
+        260
+      ],
+      "text": "INVITE YOU INTO THE GARDEN"
+    },
+    {
+      "label": "text",
+      "caption": "Strong ivory date and time separated by a tiny star symbol.",
+      "bbox": [
+        275,
+        -245,
+        355,
+        245
+      ],
+      "text": "20 JUNE 2027  ✦  FOUR O’CLOCK"
+    },
+    {
+      "label": "text",
+      "caption": "Small pale-sage venue and celebration details on two centred lines.",
+      "bbox": [
+        405,
+        -265,
+        495,
+        265
+      ],
+      "text": "THE ORANGERY, KEW\nDINNER AND DANCING TO FOLLOW"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

@@ -1,0 +1,91 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "invitations",
+      "Bioluminescent ocean-conservation gala invitation"
+    ],
+    "canvas": "single",
+    "caption": "Immersive black-tie conservation gala invitation set in a midnight underwater world, with a luminous manta ray passing through a typographic portal, restrained pearl-foil rules and cinematic bioluminescent cyan light."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Cinematic midnight-ocean scene with one enormous graceful manta ray gliding toward the viewer through shafts of deep cobalt light, faint bioluminescent plankton, luxurious photographic realism and ample dark negative space.",
+      "bbox": [
+        -510,
+        -350,
+        220,
+        350
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Fine symmetrical pearl-foil border inspired by ocean currents, with a circular portal motif and tiny constellation-like bubbles, elegant and sparse.",
+      "bbox": [
+        -485,
+        -330,
+        495,
+        330
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Tiny widely tracked pale-cyan uppercase host line at the top.",
+      "bbox": [
+        -462,
+        -260,
+        -405,
+        260
+      ],
+      "text": "THE BLUE EARTH FOUNDATION PRESENTS"
+    },
+    {
+      "label": "text",
+      "caption": "Monumental high-contrast pearl-white serif title arranged over three lines, partly intersecting the dark water while remaining legible.",
+      "bbox": [
+        -185,
+        -305,
+        70,
+        305
+      ],
+      "text": "BENEATH\nTHE\nSURFACE"
+    },
+    {
+      "label": "text",
+      "caption": "Slim luminous-cyan uppercase event descriptor.",
+      "bbox": [
+        145,
+        -260,
+        215,
+        260
+      ],
+      "text": "AN OCEAN CONSERVATION GALA"
+    },
+    {
+      "label": "text",
+      "caption": "Large pearl serif date and time, centred beneath a fine horizontal rule.",
+      "bbox": [
+        285,
+        -235,
+        365,
+        235
+      ],
+      "text": "14 NOVEMBER  •  7 PM"
+    },
+    {
+      "label": "text",
+      "caption": "Small silver-blue dress code and venue line with generous tracking.",
+      "bbox": [
+        425,
+        -280,
+        490,
+        280
+      ],
+      "text": "THE TIDE ROOM  /  BLACK TIE  /  RSVP"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

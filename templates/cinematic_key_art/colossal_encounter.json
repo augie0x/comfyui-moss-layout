@@ -1,0 +1,58 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "cinematic key art",
+      "Cinematic scale-controlled science-fiction key art"
+    ],
+    "canvas": "single",
+    "caption": "Epic cinematic science-fiction key art at blue hour, a vast storm-filled alien sky above a reflective salt plain, electric cyan bioluminescence, warm red human accent, atmospheric depth, dramatic scale and premium film-poster finish."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Large widely spaced luminous white cinematic sans-serif title across the upper sky.",
+      "bbox": [
+        -504,
+        -310,
+        -402,
+        310
+      ],
+      "text": "THE LAST SIGNAL"
+    },
+    {
+      "label": "object",
+      "caption": "An impossibly enormous elegant bioluminescent sky creature emerging from thunderclouds, its sweeping translucent wings filling the heavens, cyan light shining through mist.",
+      "bbox": [
+        -370,
+        -360,
+        230,
+        360
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "A tiny lone explorer seen from behind in a vivid red pressure suit, standing firmly on the reflective salt plain and looking upward, full body silhouette.",
+      "bbox": [
+        150,
+        -92,
+        480,
+        92
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small tracked white uppercase tagline centred at the very bottom.",
+      "bbox": [
+        490,
+        -220,
+        530,
+        220
+      ],
+      "text": "SOME THINGS ANSWER BACK"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

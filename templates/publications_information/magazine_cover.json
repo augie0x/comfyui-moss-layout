@@ -1,0 +1,70 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "editorial",
+      "Premium contemporary independent design maga"
+    ],
+    "canvas": "single",
+    "caption": "Premium contemporary independent design magazine cover; giant black masthead, editorial portrait photograph, warm beige background, small vermilion cover lines and refined spacing."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Huge black ultra-bold modern sans-serif magazine masthead across top.",
+      "bbox": [
+        -495,
+        -323,
+        -335,
+        330
+      ],
+      "text": "FORM"
+    },
+    {
+      "label": "character",
+      "caption": "Fashion editorial photographic portrait of a stylish person in a sculptural tan jacket, poised against pale travertine architecture, soft natural shadows.",
+      "bbox": [
+        -359,
+        -303,
+        335,
+        303
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Very large cream display-serif coverline overlapping lower photo, left aligned.",
+      "bbox": [
+        233,
+        -335,
+        403,
+        295
+      ],
+      "text": "NEW\nPERSPECTIVES"
+    },
+    {
+      "label": "text",
+      "caption": "Strong vermilion small all-caps feature teaser.",
+      "bbox": [
+        418,
+        -323,
+        481,
+        292
+      ],
+      "text": "THE PEOPLE SHAPING DESIGN"
+    },
+    {
+      "label": "text",
+      "caption": "Small black masthead footer, neat tracking.",
+      "bbox": [
+        494,
+        -326,
+        537,
+        265
+      ],
+      "text": "ISSUE 08  /  AUTUMN 2026"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

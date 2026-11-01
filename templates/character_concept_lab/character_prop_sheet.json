@@ -1,0 +1,77 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "character and concept lab",
+      "Cohesive character and prop concept-art board"
+    ],
+    "canvas": "multi_panel",
+    "caption": "Premium science-fantasy character concept sheet on warm grey archival paper, one coherent desert ranger design, graphite construction marks mixed with finished gouache rendering, rust red, sand and oxidised turquoise palette, museum-quality production art presentation."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Strong condensed charcoal concept-sheet title along the top-left.",
+      "bbox": [
+        -355,
+        -500,
+        -285,
+        500
+      ],
+      "text": "THE DUNE WARDEN / FIELD STUDY"
+    },
+    {
+      "label": "character",
+      "caption": "Complete full-body desert ranger standing in a relaxed three-quarter pose, layered sand-coloured survival robes, rust-red scarf, turquoise ceramic armour plates and weathered boots, fully rendered hero design.",
+      "bbox": [
+        -260,
+        -500,
+        340,
+        -140
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Detailed head-and-shoulders study of the same desert ranger, scarf lowered to reveal a calm weathered face, turquoise earpiece and windblown hair, annotated sketch aesthetic.",
+      "bbox": [
+        -250,
+        -100,
+        35,
+        170
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Long modular sun-spear belonging to the ranger, oxidised turquoise ceramic blade, wrapped leather grip and compact solar mechanism, isolated orthographic prop study.",
+      "bbox": [
+        -240,
+        210,
+        20,
+        500
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Small hovering survey drone belonging to the ranger, round sand-worn shell, three delicate fins and a turquoise lens, isolated prop study with subtle shadow.",
+      "bbox": [
+        80,
+        -80,
+        330,
+        180
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Weathered field satchel belonging to the ranger, rust-red woven straps, ceramic clasps, map tools and specimen tubes, isolated prop study.",
+      "bbox": [
+        70,
+        210,
+        330,
+        500
+      ]
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

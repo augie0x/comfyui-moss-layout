@@ -1,0 +1,59 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "experimental type and image",
+      "Kinetic typographic dance poster"
+    ],
+    "canvas": "single",
+    "caption": "Experimental contemporary dance poster, deep ultramarine field, a single dancer interacting physically with enormous fluorescent orange and pale pink letterforms, crisp flash photography, controlled motion blur, radical Swiss-grid energy and tactile screen-print texture."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Enormous fluorescent orange ultra-bold sans-serif word tilted slightly and filling the upper half, partly behind the dancer.",
+      "bbox": [
+        -490,
+        -350,
+        -170,
+        350
+      ],
+      "text": "MOVE"
+    },
+    {
+      "label": "character",
+      "caption": "Contemporary dancer in a cobalt bodysuit captured in a powerful airborne twist through the centre, limbs overlapping the giant letters, full body with sharp flash-lit edges.",
+      "bbox": [
+        -270,
+        -260,
+        320,
+        280
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Enormous pale-pink ultra-bold sans-serif word filling the lower half, partly in front of the dancer's legs.",
+      "bbox": [
+        120,
+        -350,
+        430,
+        350
+      ],
+      "text": "LOUD"
+    },
+    {
+      "label": "text",
+      "caption": "Tiny white event line running vertically near the right edge.",
+      "bbox": [
+        -50,
+        320,
+        410,
+        370
+      ],
+      "text": "FRIDAY / 22:00 / HALL 04"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

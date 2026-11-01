@@ -1,0 +1,59 @@
+{
+  "width": 928,
+  "height": 608,
+  "summary": {
+    "meta": [
+      "business stationery",
+      "Generative moiré identity business card"
+    ],
+    "canvas": "single",
+    "caption": "Experimental premium business-card reverse featuring a generative topographic emblem that shifts from concentric contour lines into an iridescent architectural tunnel, finished with restrained microtype on saturated ultramarine."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Large generative emblem made from hundreds of ultra-fine concentric silver and iridescent contour lines, morphing from a flat fingerprint at left into a deep impossible tunnel at right, precise moiré geometry on rich ultramarine stock.",
+      "bbox": [
+        -265,
+        -410,
+        150,
+        410
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Crisp warm-white uppercase studio name aligned to the lower-left, medium weight with wide tracking.",
+      "bbox": [
+        160,
+        -400,
+        220,
+        70
+      ],
+      "text": "NORTH / STUDIO"
+    },
+    {
+      "label": "text",
+      "caption": "Tiny fluorescent-coral brand proposition aligned to the lower-right baseline.",
+      "bbox": [
+        180,
+        115,
+        225,
+        400
+      ],
+      "text": "SYSTEMS MADE HUMAN"
+    },
+    {
+      "label": "text",
+      "caption": "Microscopic silver edition code running vertically beside the emblem.",
+      "bbox": [
+        -215,
+        405,
+        105,
+        450
+      ],
+      "text": "IDENTITY 07 / GENERATIVE FORM"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

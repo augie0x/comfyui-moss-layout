@@ -1,0 +1,78 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "generative campaigns",
+      "Levitating gourmet food campaign"
+    ],
+    "canvas": "single",
+    "caption": "Playful premium food campaign, an impossible gourmet mushroom burger assembling itself in mid-air, saturated tomato-red studio background, golden spotlight, flying crumbs and sauce droplets, appetising high-speed photography and bold cream typography."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Huge friendly cream condensed headline stacked at the top.",
+      "bbox": [
+        -500,
+        -315,
+        -330,
+        315
+      ],
+      "text": "STACKED\nDIFFERENT"
+    },
+    {
+      "label": "object",
+      "caption": "Glossy sesame brioche top bun floating high above the burger stack, warm toasted highlights and a few suspended sesame seeds.",
+      "bbox": [
+        -270,
+        -220,
+        -70,
+        220
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Central levitating layers of crispy oyster mushroom, melted smoked cheese, pickled red onion, lettuce and dark glossy sauce, separated enough to see each ingredient.",
+      "bbox": [
+        -60,
+        -270,
+        235,
+        270
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Toasted bottom bun floating beneath the ingredients with a soft golden contact glow and flying toasted crumbs.",
+      "bbox": [
+        245,
+        -220,
+        400,
+        220
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "A dynamic arc of dark sauce droplets, onion curls and green herbs orbiting the right side of the burger.",
+      "bbox": [
+        -110,
+        240,
+        320,
+        365
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small cream uppercase restaurant line centred at the bottom.",
+      "bbox": [
+        450,
+        -230,
+        505,
+        230
+      ],
+      "text": "PLANTS WITH ATTITUDE"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

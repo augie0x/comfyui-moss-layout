@@ -1,0 +1,70 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "posters",
+      "Atmospheric cinematic film poster in indigo "
+    ],
+    "canvas": "single",
+    "caption": "Atmospheric cinematic film poster in indigo and copper, moody fog, dramatic backlighting and premium movie-key-art composition, highly legible lettering."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Moody cinematic silhouette of a solitary traveller on a rainy train platform at twilight, distant glowing train and luminous mist, strong visual depth.",
+      "bbox": [
+        -462,
+        -342,
+        288,
+        342
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small spaced white uppercase lettering across the night sky.",
+      "bbox": [
+        -457,
+        -296,
+        -385,
+        296
+      ],
+      "text": "EVERY JOURNEY HAS A SECRET"
+    },
+    {
+      "label": "text",
+      "caption": "Huge distressed cream cinematic serif lettering in two lines.",
+      "bbox": [
+        228,
+        -315,
+        409,
+        315
+      ],
+      "text": "THE LAST\nDEPARTURE"
+    },
+    {
+      "label": "text",
+      "caption": "Small warm white uppercase production credit.",
+      "bbox": [
+        421,
+        -284,
+        471,
+        284
+      ],
+      "text": "A FILM BY RIVER STUDIOS"
+    },
+    {
+      "label": "text",
+      "caption": "Bold copper uppercase release statement, centred.",
+      "bbox": [
+        482,
+        -184,
+        534,
+        200
+      ],
+      "text": "COMING SOON"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

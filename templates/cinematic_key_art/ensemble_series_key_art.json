@@ -1,0 +1,68 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "cinematic key art",
+      "Prestige ensemble streaming-series poster"
+    ],
+    "canvas": "single",
+    "caption": "Prestige science-fiction mystery series poster, three interconnected characters layered over a rain-lit orbital city, sophisticated navy and copper palette, glowing transit lines, cinematic portrait photography, secrets and tension, polished streaming key art."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Small copper uppercase hook centred at the top.",
+      "bbox": [
+        -505,
+        -280,
+        -458,
+        280
+      ],
+      "text": "EVERY MEMORY LEAVES A TRACE"
+    },
+    {
+      "label": "character",
+      "caption": "Central foreground: composed middle-aged station commander in a dark navy uniform, direct gaze, chest-up heroic portrait with copper rim light.",
+      "bbox": [
+        -365,
+        -165,
+        270,
+        165
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Left background: young systems engineer with shaved hair and translucent interface glasses, turned slightly inward, cool cyan portrait lighting.",
+      "bbox": [
+        -285,
+        -365,
+        205,
+        -120
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Right background: enigmatic diplomat in a sculptural copper collar, turned slightly inward, warm amber portrait lighting and guarded expression.",
+      "bbox": [
+        -285,
+        120,
+        205,
+        365
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Large elegant ivory serif series title in two lines across the lower poster.",
+      "bbox": [
+        300,
+        -330,
+        485,
+        330
+      ],
+      "text": "THE QUIET\nORBIT"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

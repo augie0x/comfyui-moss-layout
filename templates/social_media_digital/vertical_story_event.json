@@ -1,0 +1,80 @@
+{
+  "width": 576,
+  "height": 1024,
+  "summary": {
+    "meta": [
+      "social media",
+      "Immersive after-dark arts festival story"
+    ],
+    "canvas": "single",
+    "caption": "Atmospheric vertical social story for an after-dark arts festival, combining a dancer, monumental light sculpture and crowd silhouettes in one cinematic neon environment with huge mobile-first typography."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Full-height cinematic night photograph of an outdoor arts festival in blue fog: one contemporary dancer moving beneath a monumental glowing coral light portal, crowd silhouettes and wet reflective ground, electric cyan lasers, immersive scale and believable atmosphere.",
+      "bbox": [
+        -490,
+        -270,
+        490,
+        270
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small acid-yellow uppercase event marker positioned in clear dark sky.",
+      "bbox": [
+        -455,
+        -230,
+        -400,
+        230
+      ],
+      "text": "CITY ARTS WEEKEND / 02—04 AUG"
+    },
+    {
+      "label": "text",
+      "caption": "Huge warm-white condensed title stacked vertically around the light portal, bold enough for phone viewing.",
+      "bbox": [
+        -340,
+        -245,
+        -80,
+        245
+      ],
+      "text": "AFTER\nDARK"
+    },
+    {
+      "label": "object",
+      "caption": "Fine luminous wayfinding symbols, starbursts and a single looping cyan line threading from the title through the dancer to the event details.",
+      "bbox": [
+        -380,
+        -250,
+        390,
+        250
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Large acid-yellow date and venue block anchored above the crowd.",
+      "bbox": [
+        245,
+        -230,
+        340,
+        230
+      ],
+      "text": "FRI—SUN  /  RIVER DISTRICT"
+    },
+    {
+      "label": "text",
+      "caption": "Compact black call-to-action inside a coral capsule near the bottom edge.",
+      "bbox": [
+        410,
+        -215,
+        470,
+        215
+      ],
+      "text": "EXPLORE THE PROGRAMME  ↑"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

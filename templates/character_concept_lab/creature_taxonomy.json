@@ -1,0 +1,67 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "character and concept lab",
+      "Speculative creature taxonomy"
+    ],
+    "canvas": "collage",
+    "caption": "Museum-quality speculative zoology plate documenting four related cloud-forest creatures, warm natural-history paper, precise graphite and watercolour rendering, turquoise scientific accents, shared anatomy language and refined contemporary field-guide design."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Elegant charcoal scientific plate title across the top.",
+      "bbox": [
+        -365,
+        -500,
+        -305,
+        500
+      ],
+      "text": "AEROVORA / CLOUD-FOREST SPECIES"
+    },
+    {
+      "label": "character",
+      "caption": "Upper-left specimen: a small six-legged gliding mammal with translucent leaf-shaped ears, moss-green fur and a long balancing tail, side profile.",
+      "bbox": [
+        -270,
+        -500,
+        -20,
+        -40
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Upper-right specimen: a tall gentle browsing creature with the same leaf-shaped ears, elongated neck, moss-green coat and turquoise throat markings, side profile.",
+      "bbox": [
+        -270,
+        40,
+        -20,
+        500
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Lower-left specimen: a compact armoured burrowing relative with overlapping bark-like plates, six sturdy legs and turquoise sensory whiskers, three-quarter view.",
+      "bbox": [
+        35,
+        -500,
+        300,
+        -40
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Lower-right specimen: a graceful airborne relative with four broad translucent wings, moss-green body and a luminous turquoise tail fan, wings fully spread.",
+      "bbox": [
+        35,
+        40,
+        300,
+        500
+      ]
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

@@ -1,0 +1,67 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "character and concept lab",
+      "Four-character fantasy party lineup"
+    ],
+    "canvas": "single",
+    "caption": "Premium fantasy role-playing game character lineup, four distinct adventurers standing together on a misty stone causeway, cohesive costume worldbuilding, dramatic dawn rim light, painterly realism, jewel-toned accents and clear full-body silhouettes."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Large weathered ivory fantasy title centred above the party.",
+      "bbox": [
+        -370,
+        -400,
+        -292,
+        400
+      ],
+      "text": "THE UNLIKELY COMPANY"
+    },
+    {
+      "label": "character",
+      "caption": "Far left: agile elven pathfinder with cropped silver hair, layered green travelling leathers, recurved bow and a watchful stance, full body.",
+      "bbox": [
+        -250,
+        -515,
+        330,
+        -275
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Left-centre: broad human shield-bearer in battered blue plate armour, round engraved shield and red cloak, grounded heroic stance, full body.",
+      "bbox": [
+        -250,
+        -265,
+        330,
+        -25
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Right-centre: elderly desert mage in flowing saffron robes holding a glass staff filled with floating starlight, calm upright pose, full body.",
+      "bbox": [
+        -250,
+        25,
+        330,
+        265
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Far right: compact horned mechanic with soot-dark overalls, brass prosthetic arm and tool satchel, confident asymmetric stance, full body.",
+      "bbox": [
+        -250,
+        275,
+        330,
+        515
+      ]
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

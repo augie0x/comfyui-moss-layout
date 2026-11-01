@@ -1,0 +1,80 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "invitations",
+      "Celestial paper-theatre baby shower invitation"
+    ],
+    "canvas": "single",
+    "caption": "Dreamlike celestial baby-shower invitation staged as a dimensional paper theatre: a tiny moon cradled by sculptural clouds, suspended stars and translucent botanical shapes, with editorial typography, tactile cut-paper shadows and a sophisticated apricot, midnight blue and warm cream palette."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Intricate cut-paper celestial mobile descending from the top edge: a glowing crescent moon, tiny planets, stars and translucent vellum leaves, delicate threads, realistic layered shadows, warm cream and muted apricot against midnight blue.",
+      "bbox": [
+        -510,
+        -330,
+        -145,
+        330
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small warm-cream uppercase invitation line with exceptionally wide tracking, floating cleanly over the dark sky.",
+      "bbox": [
+        -464,
+        -260,
+        -405,
+        260
+      ],
+      "text": "A LITTLE ORBIT IS ARRIVING"
+    },
+    {
+      "label": "object",
+      "caption": "Whimsical sculptural cloud cradle holding one tiny luminous star, tactile folded paper and soft cotton textures, peach rim light, centred like a magical stage set.",
+      "bbox": [
+        -190,
+        -350,
+        205,
+        350
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Large elegant high-contrast ivory serif title with a single flowing italic word, centred and highly legible.",
+      "bbox": [
+        -90,
+        -310,
+        85,
+        310
+      ],
+      "text": "A Baby Shower\nfor LUCY"
+    },
+    {
+      "label": "text",
+      "caption": "Compact apricot uppercase date in a fine capsule rule, centred.",
+      "bbox": [
+        255,
+        -220,
+        328,
+        220
+      ],
+      "text": "SUNDAY 18 MAY  •  2 PM"
+    },
+    {
+      "label": "text",
+      "caption": "Small warm-cream venue and RSVP details, two balanced lines with generous spacing.",
+      "bbox": [
+        370,
+        -255,
+        485,
+        255
+      ],
+      "text": "THE GLASSHOUSE  /  BRISTOL\nRSVP BY 1 MAY"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

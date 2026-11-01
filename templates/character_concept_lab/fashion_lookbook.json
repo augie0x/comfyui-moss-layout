@@ -1,0 +1,68 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "character and concept lab",
+      "Avant-garde three-look fashion lineup"
+    ],
+    "canvas": "single",
+    "caption": "Avant-garde fashion lookbook photographed in one continuous pale concrete studio, three coordinated full-body models, sculptural silhouettes inspired by ocean geology, pearl, ink-black and electric cobalt palette, sharp editorial lighting and generous negative space."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Minimal black fashion-house title aligned across the upper margin.",
+      "bbox": [
+        -370,
+        -470,
+        -305,
+        470
+      ],
+      "text": "TIDELINE / COLLECTION 01"
+    },
+    {
+      "label": "character",
+      "caption": "Left model wearing a pearl-white cocoon coat with rippled shell-like shoulders and narrow black boots, poised full-body editorial stance.",
+      "bbox": [
+        -280,
+        -500,
+        315,
+        -185
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Centre model wearing a dramatic ink-black column dress with glossy folded fins and cobalt jewellery, strong frontal full-body stance.",
+      "bbox": [
+        -280,
+        -155,
+        315,
+        155
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Right model wearing an electric cobalt tailored suit with asymmetric wave-shaped panels and pearl gloves, relaxed full-body stance.",
+      "bbox": [
+        -280,
+        185,
+        315,
+        500
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small widely tracked black collection note centred beneath the models.",
+      "bbox": [
+        325,
+        -350,
+        365,
+        350
+      ],
+      "text": "FORM / CURRENT / CHANGE"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

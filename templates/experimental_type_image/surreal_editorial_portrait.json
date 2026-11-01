@@ -1,0 +1,68 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "experimental type and image",
+      "Surreal high-fashion editorial portrait"
+    ],
+    "canvas": "single",
+    "caption": "Avant-garde fashion editorial cover, pale blush seamless studio, elegant surrealism, sculptural shadows, pearl-white and chrome materials, restrained burgundy accents, sophisticated magazine photography and intentional negative space."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Large burgundy high-fashion serif title broken across two lines in the upper-left negative space.",
+      "bbox": [
+        -475,
+        -350,
+        -255,
+        -72
+      ],
+      "text": "OTHER\nSELVES"
+    },
+    {
+      "label": "character",
+      "caption": "Striking androgynous fashion model in an architectural pearl-white gown, full three-quarter pose on the right, calm direct gaze, glossy editorial skin and sculptural side lighting.",
+      "bbox": [
+        -430,
+        -150,
+        430,
+        350
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "An oversized impossible white orchid with translucent porcelain petals floating at shoulder height on the left, soft burgundy centre.",
+      "bbox": [
+        -150,
+        -360,
+        160,
+        -120
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "A flawless floating chrome sphere reflecting the studio and model, positioned low in the left foreground with a soft oval shadow.",
+      "bbox": [
+        180,
+        -350,
+        420,
+        -100
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Tiny tracked burgundy magazine issue line along the bottom.",
+      "bbox": [
+        458,
+        -330,
+        515,
+        330
+      ],
+      "text": "ISSUE 07 — DREAM LOGIC"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

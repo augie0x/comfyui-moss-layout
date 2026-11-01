@@ -1,0 +1,79 @@
+{
+  "width": 1280,
+  "height": 720,
+  "summary": {
+    "meta": [
+      "social media",
+      "Speculative AI-city video thumbnail"
+    ],
+    "canvas": "single",
+    "caption": "High-impact widescreen video thumbnail showing a presenter holding an impossible miniature future city while two radically different urban outcomes split behind them, with simple oversized type engineered for instant readability."
+  },
+  "items": [
+    {
+      "label": "character",
+      "caption": "Engaging young urban designer in a cobalt utility jacket, waist-up, centred-left, amazed but credible expression, holding both hands forward as if supporting a miniature city, crisp cinematic studio portrait with strong rim light.",
+      "bbox": [
+        -325,
+        -610,
+        325,
+        -70
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Highly detailed miniature future city floating above the presenter’s hands: tiny towers, transit loops, parks and glowing streets, convincing scale, warm light and subtle holographic particles.",
+      "bbox": [
+        -150,
+        -340,
+        250,
+        115
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Split background behind the presenter: left side a congested grey conventional city, right side a vibrant green car-free city, sharp diagonal transition and clear visual contrast, cinematic aerial detail.",
+      "bbox": [
+        -340,
+        -620,
+        340,
+        620
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Enormous warm-white condensed headline with deep navy shadow on the right, only four words and immediately readable.",
+      "bbox": [
+        -245,
+        150,
+        80,
+        620
+      ],
+      "text": "CAN AI\nDESIGN A\nBETTER CITY?"
+    },
+    {
+      "label": "text",
+      "caption": "Black uppercase label inside a fluorescent-orange sticker tilted slightly at the lower-right.",
+      "bbox": [
+        145,
+        230,
+        215,
+        605
+      ],
+      "text": "WE TESTED IT"
+    },
+    {
+      "label": "text",
+      "caption": "Tiny warm-white episode marker in the top-right corner.",
+      "bbox": [
+        -310,
+        390,
+        -265,
+        605
+      ],
+      "text": "FUTURE LAB / 08"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

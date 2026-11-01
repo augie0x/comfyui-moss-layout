@@ -1,0 +1,67 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "storyworlds and sequential art",
+      "Narrative architectural cutaway"
+    ],
+    "canvas": "collage",
+    "caption": "A spectacular isometric cutaway through a vertical solarpunk research station at dusk, four distinct inhabited rooms connected by stairs and transparent service shafts, warm interior pools of light against a deep teal landscape, intricate cinematic worldbuilding and coherent architectural perspective."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Compact luminous ivory architectural title centred above the structure.",
+      "bbox": [
+        -370,
+        -300,
+        -318,
+        300
+      ],
+      "text": "THE LIVING STATION"
+    },
+    {
+      "label": "object",
+      "caption": "Upper-left greenhouse laboratory room with curved glass walls, hanging plants, seed vaults and a botanist tending glowing specimens.",
+      "bbox": [
+        -290,
+        -510,
+        -15,
+        -25
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Upper-right observatory room with a large circular telescope window, star charts and an astronomer at a brass console.",
+      "bbox": [
+        -290,
+        25,
+        -15,
+        510
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Lower-left communal kitchen and library room, long timber table, shelves, steam and several residents sharing a late meal.",
+      "bbox": [
+        20,
+        -510,
+        300,
+        -25
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Lower-right turbine workshop room with turquoise machinery, suspended tools and an engineer repairing a compact wind generator.",
+      "bbox": [
+        20,
+        25,
+        300,
+        510
+      ]
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

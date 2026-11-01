@@ -1,0 +1,90 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "storyworlds and sequential art",
+      "Three-panel cinematic graphic-novel sequence"
+    ],
+    "canvas": "multi_panel",
+    "caption": "A wide three-panel graphic-novel page with clean narrow gutters, consistent masked courier character, rain-soaked cyberpunk city at night, expressive ink textures, selective neon magenta and cyan, sequential left-to-right action and cohesive cinematic lighting."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Small sharp white graphic-novel chapter title across the top margin.",
+      "bbox": [
+        -365,
+        -500,
+        -305,
+        500
+      ],
+      "text": "NIGHT COURIER / CHAPTER 04"
+    },
+    {
+      "label": "character",
+      "caption": "Left panel: the masked bicycle courier crouches on a rain-slick rooftop holding a glowing package, distant neon city below, tense establishing shot.",
+      "bbox": [
+        -270,
+        -510,
+        245,
+        -190
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Centre panel: the same masked bicycle courier leaps dramatically across a narrow rooftop gap with the glowing package secured under one arm, dynamic low angle.",
+      "bbox": [
+        -270,
+        -160,
+        245,
+        160
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Right panel: the same masked bicycle courier lands beside a mysterious silhouetted recipient beneath a cyan streetlight, dramatic final beat.",
+      "bbox": [
+        -270,
+        190,
+        245,
+        510
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Compact magenta uppercase panel caption at the bottom-left.",
+      "bbox": [
+        270,
+        -510,
+        345,
+        -190
+      ],
+      "text": "THE CALL"
+    },
+    {
+      "label": "text",
+      "caption": "Compact magenta uppercase panel caption at the bottom-centre.",
+      "bbox": [
+        270,
+        -160,
+        345,
+        160
+      ],
+      "text": "THE CROSSING"
+    },
+    {
+      "label": "text",
+      "caption": "Compact magenta uppercase panel caption at the bottom-right.",
+      "bbox": [
+        270,
+        190,
+        345,
+        510
+      ],
+      "text": "THE ARRIVAL"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

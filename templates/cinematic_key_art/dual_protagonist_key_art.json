@@ -1,0 +1,68 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "cinematic key art",
+      "Dual-character cinematic ensemble key art"
+    ],
+    "canvas": "single",
+    "caption": "Prestige neo-noir thriller key art, two rival protagonists facing inward across a fractured futuristic city, wet midnight atmosphere, deep teal shadows, amber practical lights, volumetric haze and polished streaming-series poster composition."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Small narrow uppercase white series line centred above the characters.",
+      "bbox": [
+        -500,
+        -280,
+        -448,
+        280
+      ],
+      "text": "TWO TRUTHS. ONE CITY."
+    },
+    {
+      "label": "character",
+      "caption": "Determined female investigative journalist in a dark teal raincoat, three-quarter portrait on the left, looking toward the rival at right, rain catching the rim light.",
+      "bbox": [
+        -405,
+        -360,
+        285,
+        -20
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Charismatic male underground fixer in a tailored charcoal coat, three-quarter portrait on the right, looking toward the rival at left, warm amber edge lighting.",
+      "bbox": [
+        -405,
+        20,
+        285,
+        360
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "A razor-thin vertical fracture of brilliant golden light splitting the rainy city between the two protagonists, sparks and glass fragments suspended around it.",
+      "bbox": [
+        -300,
+        -82,
+        300,
+        82
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Huge condensed ivory thriller title stacked across the lower poster.",
+      "bbox": [
+        320,
+        -330,
+        488,
+        330
+      ],
+      "text": "FAULT\nLINE"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

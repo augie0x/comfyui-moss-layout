@@ -1,0 +1,67 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "storyworlds and sequential art",
+      "Split-world panoramic fantasy composition"
+    ],
+    "canvas": "single",
+    "caption": "Wide cinematic fantasy panorama divided by a radiant portal, ancient organic wilderness on the left and a luminous advanced metropolis on the right, both worlds sharing one horizon, high detail, cohesive lighting and spectacular concept-art finish."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Elegant bright title floating high above the portal with generous tracking.",
+      "bbox": [
+        -355,
+        -240,
+        -292,
+        240
+      ],
+      "text": "THE WAY BETWEEN"
+    },
+    {
+      "label": "object",
+      "caption": "Ancient enchanted forest realm filling the left half, monumental mossy trees, waterfalls, drifting fireflies and emerald morning mist flowing toward the centre.",
+      "bbox": [
+        -300,
+        -520,
+        320,
+        -35
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Dazzling far-future city filling the right half, slender illuminated towers, aerial transit trails and violet-blue evening haze flowing toward the centre.",
+      "bbox": [
+        -300,
+        35,
+        320,
+        520
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "A tall circular portal of liquid golden light at the centre, clearly separating yet visually connecting the two environments, intricate floating runes around its rim.",
+      "bbox": [
+        -270,
+        -125,
+        280,
+        125
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "A small cloaked traveller seen from behind stepping through the central portal, one foot in each world, fabric swept by energy, full body.",
+      "bbox": [
+        70,
+        -60,
+        340,
+        60
+      ]
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

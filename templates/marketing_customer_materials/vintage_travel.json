@@ -1,0 +1,59 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "posters",
+      "Illustrated 1950s vintage travel print"
+    ],
+    "canvas": "single",
+    "caption": "Illustrated 1950s vintage travel print, rich sun-faded turquoise sea, pale sand, terracotta sun and softly weathered paper, cinematic vertical composition."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Large cream art-deco travel-poster lettering at the top, centred.",
+      "bbox": [
+        -457,
+        -323,
+        -256,
+        323
+      ],
+      "text": "DISCOVER\nTHE COAST"
+    },
+    {
+      "label": "object",
+      "caption": "Stylised Mediterranean seaside cliffs, turquoise water, small white sailing boat and warm coral sky, vintage screen-print illustration.",
+      "bbox": [
+        -245,
+        -326,
+        316,
+        326
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Elegant cream condensed lettering centred in a teal band.",
+      "bbox": [
+        332,
+        -273,
+        413,
+        273
+      ],
+      "text": "A WORLD AWAY"
+    },
+    {
+      "label": "text",
+      "caption": "Small navy uppercase travel slogan aligned centrally.",
+      "bbox": [
+        450,
+        -288,
+        492,
+        288
+      ],
+      "text": "EXPLORE MORE • TRAVEL OFTEN"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

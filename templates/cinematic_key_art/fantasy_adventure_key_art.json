@@ -1,0 +1,67 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "cinematic key art",
+      "Widescreen fantasy adventure ensemble"
+    ],
+    "canvas": "single",
+    "caption": "Widescreen family fantasy adventure key art, three unlikely young heroes on a windblown ridge before a colossal floating castle and friendly cloud dragon, radiant sunrise, turquoise and apricot sky, sweeping painterly scale and optimistic theatrical composition."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "A colossal floating castle of pale stone, waterfalls and windmills suspended among clouds in the upper centre, with a long friendly cloud dragon circling its towers.",
+      "bbox": [
+        -340,
+        -350,
+        80,
+        350
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Foreground left: brave young mapmaker in a mustard coat holding an unfurled glowing chart, windblown full-body stance looking toward the castle.",
+      "bbox": [
+        -40,
+        -430,
+        330,
+        -170
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Foreground centre: cheerful small moss-covered stone guardian carrying a travel pack, broad stable full-body silhouette.",
+      "bbox": [
+        20,
+        -125,
+        335,
+        125
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Foreground right: inventive young sky-sailor in turquoise overalls holding a brass glider wing, confident full-body stance looking toward the castle.",
+      "bbox": [
+        -40,
+        170,
+        330,
+        430
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Large joyful ivory adventure title across the upper sky.",
+      "bbox": [
+        -365,
+        -430,
+        -275,
+        430
+      ],
+      "text": "CASTLE OF THE FOUR WINDS"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

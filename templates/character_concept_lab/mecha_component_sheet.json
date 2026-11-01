@@ -1,0 +1,67 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "character and concept lab",
+      "Mecha and component design board"
+    ],
+    "canvas": "collage",
+    "caption": "High-end science-fiction production design sheet on dark graphite drafting paper, coherent compact rescue mecha and its modular components, precise industrial rendering, safety orange, ceramic white and gunmetal palette, cyan technical illumination and subtle construction lines."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Condensed white technical title along the upper edge.",
+      "bbox": [
+        -365,
+        -500,
+        -305,
+        500
+      ],
+      "text": "ARX-7 / URBAN RESCUE FRAME"
+    },
+    {
+      "label": "object",
+      "caption": "Large complete ARX-7 bipedal rescue mecha in three-quarter standing view, compact ceramic-white armour, orange safety panels, powerful hydraulic limbs and cyan optics.",
+      "bbox": [
+        -280,
+        -500,
+        330,
+        -120
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Detailed isolated helmet and sensor-head module matching the ARX-7, cyan multi-lens visor, orange rescue beacon and exposed connectors.",
+      "bbox": [
+        -270,
+        -80,
+        -20,
+        190
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Detailed isolated heavy lifting arm module matching the ARX-7, articulated five-finger clamp, hydraulic pistons and orange hazard markings.",
+      "bbox": [
+        -270,
+        230,
+        5,
+        505
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Detailed isolated backpack propulsion and medical-support module matching the ARX-7, twin ducted fans, folded rescue stretcher and cyan status lights.",
+      "bbox": [
+        45,
+        -65,
+        315,
+        505
+      ]
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

@@ -1,0 +1,78 @@
+{
+  "width": 1024,
+  "height": 1024,
+  "summary": {
+    "meta": [
+      "generative campaigns",
+      "Luxury fragrance ecosystem"
+    ],
+    "canvas": "single",
+    "caption": "Surreal square luxury fragrance campaign, a crystal perfume bottle sustaining a miniature moonlit wetland ecosystem, black mirrored studio, silver-blue mist, luminous botanical details, tactile macro photography and restrained high-fashion art direction."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Elegant silver serif fragrance name centred high above the bottle.",
+      "bbox": [
+        -475,
+        -220,
+        -390,
+        220
+      ],
+      "text": "AFTER RAIN"
+    },
+    {
+      "label": "object",
+      "caption": "Hero rectangular crystal perfume bottle with a dark silver cap, standing centrally on black mirror, clear liquid containing a faint blue glow, no extra label text.",
+      "bbox": [
+        -270,
+        -155,
+        285,
+        155
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Miniature moonlit wetland growing around the bottle's left base, tiny reeds, reflective pools, white flowers and curling silver mist.",
+      "bbox": [
+        20,
+        -470,
+        350,
+        -165
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "A delicate translucent blue moth hovering near the upper-right shoulder of the bottle, wings open with dew-like highlights.",
+      "bbox": [
+        -300,
+        180,
+        -40,
+        450
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Fine silver branches and luminous raindrops arching around the bottle's right base like a living frame.",
+      "bbox": [
+        40,
+        170,
+        350,
+        470
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small tracked silver campaign line centred at the bottom.",
+      "bbox": [
+        420,
+        -220,
+        475,
+        220
+      ],
+      "text": "A WORLD AWAKENS"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

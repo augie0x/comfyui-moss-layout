@@ -1,0 +1,58 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "experimental type and image",
+      "Typography integrated into architecture"
+    ],
+    "canvas": "single",
+    "caption": "Surreal widescreen architectural artwork at golden hour, a monumental brutalist cultural centre whose inhabited concrete structure is physically formed by giant letter shapes, warm sandstone, cobalt shadows, tiny visitors and precise editorial photography."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "The exact word rendered as colossal three-dimensional inhabited concrete architecture across the centre, with windows, stairs and people built into the letterforms.",
+      "bbox": [
+        -220,
+        -510,
+        190,
+        510
+      ],
+      "text": "COMMON"
+    },
+    {
+      "label": "object",
+      "caption": "A long shallow reflecting pool beneath the letter-building, mirroring the monumental typography and golden sky with slight ripples.",
+      "bbox": [
+        180,
+        -500,
+        330,
+        500
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "A small group of visitors in vivid cobalt clothing walking through the lower openings of the giant letters, clearly establishing scale.",
+      "bbox": [
+        40,
+        -250,
+        285,
+        250
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small charcoal architectural caption in the upper-left sky.",
+      "bbox": [
+        -345,
+        -500,
+        -285,
+        -60
+      ],
+      "text": "A PLACE MADE TOGETHER"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

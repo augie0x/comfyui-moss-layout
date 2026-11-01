@@ -1,0 +1,102 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "brochures",
+      "Continuous-world regenerative design trifold"
+    ],
+    "canvas": "multi_panel",
+    "caption": "Ambitious flat trifold brochure whose three panels form one continuous panoramic world, transitioning from underwater reef restoration through a tidal research building to a future coastal city, with coherent horizon, light and visual storytelling across folds."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "One seamless cinematic panorama spanning all three brochure panels: left panel below the waterline with restored coral and divers, centre panel a transparent tidal research pavilion straddling sea and land, right panel a lush climate-positive coastal city at sunrise; perfectly continuous horizon, coherent perspective and premium architectural concept art.",
+      "bbox": [
+        -350,
+        -520,
+        350,
+        520
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Tiny warm-white uppercase back-cover marker in the upper-left panel.",
+      "bbox": [
+        -325,
+        -500,
+        -280,
+        -220
+      ],
+      "text": "FIELD NOTES / 2027"
+    },
+    {
+      "label": "text",
+      "caption": "Compact warm-white contact block anchored at the bottom of the underwater panel.",
+      "bbox": [
+        190,
+        -500,
+        315,
+        -220
+      ],
+      "text": "NORTH STUDIO\nLONDON  /  OSLO  /  TOKYO\nNORTH.STUDIO"
+    },
+    {
+      "label": "text",
+      "caption": "Small fluorescent-coral statement centred at the top of the middle panel.",
+      "bbox": [
+        -320,
+        -155,
+        -260,
+        155
+      ],
+      "text": "DESIGN WITH THE TIDE"
+    },
+    {
+      "label": "object",
+      "caption": "Fine luminous diagram lines tracing energy, water and habitat exchange through the central tidal pavilion, elegant technical overlay integrated with the panorama.",
+      "bbox": [
+        -260,
+        -165,
+        215,
+        165
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Large condensed mineral-white cover title stacked in the open sky of the right panel.",
+      "bbox": [
+        -150,
+        195,
+        85,
+        510
+      ],
+      "text": "FUTURES\nIN COMMON"
+    },
+    {
+      "label": "text",
+      "caption": "Small warm-white cover subtitle with generous tracking.",
+      "bbox": [
+        120,
+        200,
+        190,
+        505
+      ],
+      "text": "PLACES THAT GIVE MORE THAN THEY TAKE"
+    },
+    {
+      "label": "text",
+      "caption": "Fluorescent-coral studio signature and directional arrow at the lower-right corner.",
+      "bbox": [
+        275,
+        205,
+        325,
+        505
+      ],
+      "text": "NORTH / STUDIO  →"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

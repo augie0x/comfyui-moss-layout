@@ -1,0 +1,80 @@
+{
+  "width": 928,
+  "height": 608,
+  "summary": {
+    "meta": [
+      "product promotion",
+      "Nocturnal botanical artisan label"
+    ],
+    "canvas": "single",
+    "caption": "Striking flat artisan candle label conceived as a miniature nocturnal ecosystem: an engraved luna moth, medicinal botanicals and a small eclipse orbit the product name in copper foil over an inky blue-black field."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Intricate symmetrical luna moth rendered as fine copper-foil engraving, wings filled with tiny sage, cedar and citrus botanical diagrams, scientific precision and luxurious print texture.",
+      "bbox": [
+        -250,
+        -420,
+        95,
+        -70
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Asymmetrical border of nocturnal herbs, seed pods, tiny stars and one eclipsed copper sun wrapping around all four edges, detailed vintage engraving on deep blue-black paper.",
+      "bbox": [
+        -275,
+        -440,
+        275,
+        440
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Large warm-ivory high-contrast serif brand name with a subtle arched baseline.",
+      "bbox": [
+        -215,
+        -20,
+        -120,
+        420
+      ],
+      "text": "WILD GROVE"
+    },
+    {
+      "label": "text",
+      "caption": "Compact copper uppercase edition and product name separated by a tiny star.",
+      "bbox": [
+        -65,
+        -10,
+        10,
+        410
+      ],
+      "text": "NIGHT GARDEN No. 07  ✦  BOTANICAL CANDLE"
+    },
+    {
+      "label": "text",
+      "caption": "Small sage scent notes with generous spacing.",
+      "bbox": [
+        85,
+        0,
+        145,
+        400
+      ],
+      "text": "CEDAR  /  SAGE  /  BLOOD ORANGE"
+    },
+    {
+      "label": "text",
+      "caption": "Tiny warm-ivory production details aligned along the bottom edge.",
+      "bbox": [
+        205,
+        5,
+        250,
+        395
+      ],
+      "text": "HAND POURED  •  200 G  •  BATCH 041"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

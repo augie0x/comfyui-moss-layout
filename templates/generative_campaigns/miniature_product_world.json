@@ -1,0 +1,68 @@
+{
+  "width": 1024,
+  "height": 1024,
+  "summary": {
+    "meta": [
+      "generative campaigns",
+      "Miniature world product storytelling"
+    ],
+    "canvas": "single",
+    "caption": "Whimsical square outdoor watch campaign, a premium adventure watch transformed into a monumental landscape inhabited by tiny explorers, misty alpine dawn, moss, water and brushed titanium, macro product photography blended seamlessly with cinematic environmental concept art."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Clean white modern campaign title in the upper-left sky.",
+      "bbox": [
+        -465,
+        -450,
+        -360,
+        -40
+      ],
+      "text": "TIME IS A PLACE"
+    },
+    {
+      "label": "object",
+      "caption": "Hero brushed-titanium adventure wristwatch lying diagonally like a monumental circular plateau, deep green dial, tactile crown and dark woven strap, no extra dial text.",
+      "bbox": [
+        -250,
+        -300,
+        300,
+        320
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "A complete miniature alpine ecosystem growing across and around the watch: moss forest on the strap, waterfall pouring from the bezel and a tiny turquoise lake in the dial.",
+      "bbox": [
+        -150,
+        -400,
+        360,
+        420
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Two tiny red-jacketed explorers standing on the watch bezel beside a miniature tent, looking across the enormous green dial landscape.",
+      "bbox": [
+        -40,
+        -80,
+        155,
+        105
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small tracked white product line in the lower-right mist.",
+      "bbox": [
+        400,
+        60,
+        465,
+        455
+      ],
+      "text": "NORTH / AUTOMATIC"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

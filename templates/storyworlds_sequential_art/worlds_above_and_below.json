@@ -1,0 +1,68 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "storyworlds and sequential art",
+      "Connected above-and-below environmental storytelling"
+    ],
+    "canvas": "single",
+    "caption": "Wide cinematic environmental concept art shown as one continuous above-and-below cross-section, a tranquil floating garden city in warm daylight above the waterline and a vast mysterious submerged civilisation below, seamless vertical connection, luminous colour, atmospheric scale and detailed worldbuilding."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Upper half: an airy floating garden city of white stone terraces, waterfalls, flowering trees and tiny sail craft beneath a golden sunrise, seen across a perfectly calm waterline.",
+      "bbox": [
+        -350,
+        -520,
+        -15,
+        520
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Lower half: an immense submerged civilisation of glowing turquoise towers, schools of fish, deep blue shafts of light and ancient structures descending into darkness directly beneath the city above.",
+      "bbox": [
+        15,
+        -520,
+        350,
+        520
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "A lone free diver crossing the central waterline, body vertical and clearly silhouetted, reaching from the sunlit surface toward the glowing city below.",
+      "bbox": [
+        -170,
+        -75,
+        250,
+        75
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Elegant slim white serif title in the upper-left sky.",
+      "bbox": [
+        -330,
+        -460,
+        -245,
+        -40
+      ],
+      "text": "ABOVE"
+    },
+    {
+      "label": "text",
+      "caption": "Elegant slim luminous cyan serif title in the lower-right depths.",
+      "bbox": [
+        245,
+        40,
+        335,
+        460
+      ],
+      "text": "BELOW"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

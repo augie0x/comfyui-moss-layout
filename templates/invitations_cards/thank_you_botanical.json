@@ -1,0 +1,69 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "greeting cards",
+      "Cyanotype botanical thank-you card"
+    ],
+    "canvas": "single",
+    "caption": "Contemporary botanical thank-you card built from a rich indigo cyanotype garden, translucent pressed flowers and one oversized typographic gesture, balancing scientific detail with tactile handmade printmaking."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Full-height cyanotype composition of wild meadow plants, ferns and seed heads exposed as intricate pale-blue silhouettes on saturated indigo handmade paper, fine photographic detail, deckled texture and uneven sun-print edges.",
+      "bbox": [
+        -510,
+        -350,
+        500,
+        350
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Three real translucent pressed flowers laid across the cyanotype, coral, amber and milky white petals casting tiny physical shadows, arranged diagonally with museum-specimen precision.",
+      "bbox": [
+        -330,
+        -290,
+        210,
+        315
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Enormous warm-white italic high-contrast serif words crossing the botanical field, elegant flourishes but clearly readable.",
+      "bbox": [
+        -80,
+        -335,
+        125,
+        335
+      ],
+      "text": "thank you"
+    },
+    {
+      "label": "text",
+      "caption": "Small coral uppercase gratitude line set inside a clean translucent vellum label.",
+      "bbox": [
+        235,
+        -260,
+        305,
+        260
+      ],
+      "text": "FOR HELPING GOOD THINGS GROW"
+    },
+    {
+      "label": "text",
+      "caption": "Tiny warm-white personal closing aligned at the lower edge with wide tracking.",
+      "bbox": [
+        420,
+        -245,
+        480,
+        245
+      ],
+      "text": "WITH ALL OUR GRATITUDE  /  M + J"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

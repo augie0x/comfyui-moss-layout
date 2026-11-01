@@ -1,0 +1,111 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "information design",
+      "Circular-material transformation infographic"
+    ],
+    "canvas": "single",
+    "caption": "Bold educational infographic showing waste transformed into a new object across three connected cinematic stages, combining tactile still-life photography, a continuous looping material ribbon and highly legible numbered instructions."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Large dark-ink headline on pale mineral paper, with the final word picked out in fluorescent orange.",
+      "bbox": [
+        -500,
+        -335,
+        -365,
+        335
+      ],
+      "text": "FROM WASTE\nTO WONDER"
+    },
+    {
+      "label": "object",
+      "caption": "Stage one still life: colourful translucent plastic fragments carefully sorted into a circular tray, top-down studio photography, crisp shadows and museum-object precision.",
+      "bbox": [
+        -300,
+        -330,
+        -40,
+        -105
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Stage two still life: the same material transformed into flowing molten ribbons inside a compact futuristic recycling machine, visible texture continuity, cobalt machinery and orange glow.",
+      "bbox": [
+        -300,
+        -85,
+        -40,
+        140
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Stage three still life: a beautiful finished speckled chair made from the same recycled colours, isolated like a design icon with a dramatic long shadow.",
+      "bbox": [
+        -300,
+        160,
+        -40,
+        335
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "One continuous fluorescent-orange ribbon and directional arrows weaving through all three stages, visually connecting fragments, molten material and finished chair.",
+      "bbox": [
+        -330,
+        -340,
+        80,
+        340
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Bold numbered cobalt caption for the sorting stage with concise instruction.",
+      "bbox": [
+        85,
+        -330,
+        225,
+        -110
+      ],
+      "text": "01  SORT\nSeparate by material"
+    },
+    {
+      "label": "text",
+      "caption": "Bold numbered cobalt caption for the remaking stage with concise instruction.",
+      "bbox": [
+        85,
+        -90,
+        225,
+        140
+      ],
+      "text": "02  REMAKE\nClean, melt, reform"
+    },
+    {
+      "label": "text",
+      "caption": "Bold numbered cobalt caption for the reuse stage with concise instruction.",
+      "bbox": [
+        85,
+        165,
+        225,
+        335
+      ],
+      "text": "03  RETURN\nDesign another life"
+    },
+    {
+      "label": "text",
+      "caption": "Strong dark-ink footer statement separated by an orange rule.",
+      "bbox": [
+        405,
+        -325,
+        485,
+        325
+      ],
+      "text": "NOTHING IS FINISHED. EVERYTHING BECOMES."
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

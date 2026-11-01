@@ -1,0 +1,92 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "editorial",
+      "Illustrated future-neighbourhood newsletter"
+    ],
+    "canvas": "single",
+    "caption": "Highly visual community newsletter front page centred on an intricate isometric neighbourhood map, mixing documentary characters, labelled micro-stories and bold civic typography in brick red, electric blue and warm recycled-paper tones."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Bold condensed brick-red masthead spanning the page width, slightly cropped at the edges like an independent newspaper.",
+      "bbox": [
+        -505,
+        -340,
+        -405,
+        340
+      ],
+      "text": "THE LOCAL EDIT"
+    },
+    {
+      "label": "text",
+      "caption": "Small cobalt issue line and theme marker separated by a fine rule.",
+      "bbox": [
+        -390,
+        -315,
+        -330,
+        315
+      ],
+      "text": "ISSUE 08  /  THE NEIGHBOURHOOD WE’RE BUILDING"
+    },
+    {
+      "label": "object",
+      "caption": "Detailed isometric cutaway illustration of one lively city block on warm paper: rooftop gardens, repair café, tiny library, cycle lane, rainwater beds and diverse neighbours interacting, consistent miniature scale, bold editorial ink and gouache style.",
+      "bbox": [
+        -300,
+        -340,
+        150,
+        340
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Large cobalt editorial headline set partly beside the map and partly over open sky, strong hierarchy.",
+      "bbox": [
+        105,
+        -320,
+        245,
+        320
+      ],
+      "text": "ONE BLOCK,\nMANY FUTURES"
+    },
+    {
+      "label": "text",
+      "caption": "Concise charcoal standfirst with a brick-red drop cap.",
+      "bbox": [
+        270,
+        -315,
+        355,
+        315
+      ],
+      "text": "Meet the neighbours turning empty corners into places to grow, mend and gather."
+    },
+    {
+      "label": "text",
+      "caption": "Three compact cobalt story teasers divided by small orange arrows along the lower edge.",
+      "bbox": [
+        385,
+        -320,
+        465,
+        320
+      ],
+      "text": "ROOFTOP HARVEST  04   →   NIGHT BUS RETURNS  07   →   REPAIR WEEKEND  11"
+    },
+    {
+      "label": "text",
+      "caption": "Tiny charcoal website and free-copy note aligned to the bottom baseline.",
+      "bbox": [
+        485,
+        -300,
+        515,
+        300
+      ],
+      "text": "FREE  /  LOCAL-EDIT.ORG"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

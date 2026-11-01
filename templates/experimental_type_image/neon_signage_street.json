@@ -1,0 +1,70 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "experimental type and image",
+      "Cinematic in-world neon typography"
+    ],
+    "canvas": "single",
+    "caption": "Cinematic rainy vertical street scene in a dense retro-future night market, wet pavement reflections, indigo fog, magenta and cyan practical neon, layered depth and every text element appearing naturally as a physical sign within the environment."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Large vertical cyan neon hotel sign attached to the upper-left building, individual glowing glass tubes and rain streaks.",
+      "bbox": [
+        -480,
+        -345,
+        -80,
+        -245
+      ],
+      "text": "NOVA"
+    },
+    {
+      "label": "text",
+      "caption": "Wide hot-pink neon noodle-shop sign projecting above the street at upper-right, bold rounded lettering.",
+      "bbox": [
+        -350,
+        80,
+        -210,
+        355
+      ],
+      "text": "MOON BOWL"
+    },
+    {
+      "label": "text",
+      "caption": "Small amber handwritten neon repair sign in a lower-left shop window.",
+      "bbox": [
+        40,
+        -350,
+        155,
+        -100
+      ],
+      "text": "OPEN LATE"
+    },
+    {
+      "label": "text",
+      "caption": "Electric-blue arrow sign reflected near the lower-right pavement, crisp condensed capitals.",
+      "bbox": [
+        245,
+        80,
+        360,
+        355
+      ],
+      "text": "THIS WAY"
+    },
+    {
+      "label": "character",
+      "caption": "Solitary cyclist in a transparent raincoat riding away down the centre of the street, full-body silhouette catching cyan and pink reflections.",
+      "bbox": [
+        -40,
+        -100,
+        410,
+        110
+      ]
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

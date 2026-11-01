@@ -1,0 +1,69 @@
+{
+  "width": 768,
+  "height": 1088,
+  "summary": {
+    "meta": [
+      "greeting cards",
+      "Prismatic photographic birthday card"
+    ],
+    "canvas": "single",
+    "caption": "Fashion-forward photographic birthday card combining a candid golden-hour portrait with prismatic glass refractions, oversized cropped typography, iridescent foil accents and an energetic cobalt, tangerine and lilac colour system."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "Full-bleed editorial birthday photograph of two stylish friends laughing in direct golden-hour sunlight, viewed through faceted prismatic glass that creates controlled rainbow reflections and repeated fragments, authentic joyful expression, premium fashion photography.",
+      "bbox": [
+        -510,
+        -350,
+        205,
+        350
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Huge condensed white sans-serif wordmark cropped boldly by the upper and side edges, still readable, subtle cobalt shadow.",
+      "bbox": [
+        -470,
+        -345,
+        -255,
+        345
+      ],
+      "text": "ANOTHER\nWONDERFUL YEAR"
+    },
+    {
+      "label": "object",
+      "caption": "A loose diagonal stream of metallic foil confetti, translucent colour-gel shards and two tiny instant-film frames crossing from lower left to upper right, sophisticated rather than childish.",
+      "bbox": [
+        -120,
+        -350,
+        340,
+        350
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Oversized electric-cobalt and tangerine stacked birthday message, bold geometric lettering with playful baseline shifts.",
+      "bbox": [
+        180,
+        -325,
+        355,
+        325
+      ],
+      "text": "HAPPY\nBIRTHDAY"
+    },
+    {
+      "label": "text",
+      "caption": "Small intimate handwritten-style closing in deep navy on a pale lilac strip.",
+      "bbox": [
+        405,
+        -220,
+        490,
+        220
+      ],
+      "text": "Keep shining — with love, always"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

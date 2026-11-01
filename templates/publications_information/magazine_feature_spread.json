@@ -1,0 +1,80 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "editorial",
+      "Immersive regenerative-architecture feature spread"
+    ],
+    "canvas": "multi_panel",
+    "caption": "Cinematic two-page design-magazine feature about regenerative architecture, combining a continuous living-building photograph, translucent technical overlays, oversized editorial typography and precise small text in moss green, mineral white and safety orange."
+  },
+  "items": [
+    {
+      "label": "object",
+      "caption": "One continuous ultra-wide editorial photograph spanning both pages: a radical timber research building overtaken by lush vegetation and mist, interior rooms visible through glass, tiny people for scale, dramatic soft daylight, premium architecture-magazine realism.",
+      "bbox": [
+        -350,
+        -520,
+        350,
+        520
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Tiny safety-orange uppercase section marker with wide tracking in the top-left margin.",
+      "bbox": [
+        -330,
+        -500,
+        -285,
+        -65
+      ],
+      "text": "FUTURES / LIVING SYSTEMS"
+    },
+    {
+      "label": "text",
+      "caption": "Monumental condensed mineral-white headline stacked across the left page, partly overlaying dark foliage while remaining perfectly legible.",
+      "bbox": [
+        -260,
+        -500,
+        -35,
+        -35
+      ],
+      "text": "BUILDINGS\nTHAT\nBREATHE"
+    },
+    {
+      "label": "object",
+      "caption": "Fine translucent white technical cutaway lines and numbered botanical callouts over the right-page architecture, showing water, airflow and habitat loops like a sophisticated scientific diagram.",
+      "bbox": [
+        -315,
+        45,
+        120,
+        505
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Elegant warm-white standfirst on a translucent dark-moss rectangle, left aligned on the right page.",
+      "bbox": [
+        105,
+        60,
+        205,
+        500
+      ],
+      "text": "A new generation of architecture\ndoes more than shelter life —\nit becomes part of the ecosystem."
+    },
+    {
+      "label": "text",
+      "caption": "Compact highly readable two-column article text in mineral white with one orange drop cap.",
+      "bbox": [
+        225,
+        55,
+        335,
+        500
+      ],
+      "text": "Can a building clean water, grow food and restore habitat? Inside the experimental studios turning architecture into a living participant."
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

@@ -1,0 +1,70 @@
+{
+  "width": 1024,
+  "height": 1024,
+  "summary": {
+    "meta": [
+      "experimental type and image",
+      "Multilingual cultural collage"
+    ],
+    "canvas": "collage",
+    "caption": "Bold square global arts-festival collage, torn cobalt and vermilion paper, black-and-white street photography, fluorescent yellow tape, halftone textures and energetic multilingual typography arranged as an intentional contemporary graphic composition."
+  },
+  "items": [
+    {
+      "label": "character",
+      "caption": "Central black-and-white flash photograph of a joyful young street dancer mid-step, cut out with rough torn-paper edges and overlapping the surrounding type.",
+      "bbox": [
+        -250,
+        -170,
+        330,
+        180
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Huge black condensed English lettering on a fluorescent-yellow torn-paper block in the upper-left.",
+      "bbox": [
+        -450,
+        -470,
+        -270,
+        -80
+      ],
+      "text": "MOVE"
+    },
+    {
+      "label": "text",
+      "caption": "Large white Japanese characters printed vertically on a vermilion strip at the upper-right.",
+      "bbox": [
+        -440,
+        230,
+        -80,
+        430
+      ],
+      "text": "未来"
+    },
+    {
+      "label": "text",
+      "caption": "Large cobalt Arabic lettering on an ivory torn-paper block in the lower-left.",
+      "bbox": [
+        210,
+        -450,
+        420,
+        -120
+      ],
+      "text": "نور"
+    },
+    {
+      "label": "text",
+      "caption": "Large fluorescent-yellow Chinese characters on a black rectangle in the lower-right.",
+      "bbox": [
+        235,
+        150,
+        430,
+        465
+      ],
+      "text": "新世界"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

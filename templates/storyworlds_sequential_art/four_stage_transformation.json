@@ -1,0 +1,111 @@
+{
+  "width": 1088,
+  "height": 768,
+  "summary": {
+    "meta": [
+      "storyworlds and sequential art",
+      "Four-stage metamorphosis sequence"
+    ],
+    "canvas": "multi_panel",
+    "caption": "A wide four-panel visual poem showing one dancer transforming into a celestial flowering tree, consistent figure and camera position across panels, midnight blue background, luminous coral and gold accents, elegant editorial fantasy illustration with clean narrow gutters."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Small refined gold title spanning the upper margin.",
+      "bbox": [
+        -370,
+        -470,
+        -318,
+        470
+      ],
+      "text": "BECOMING / A STUDY IN FOUR MOVEMENTS"
+    },
+    {
+      "label": "character",
+      "caption": "Panel one: a poised contemporary dancer in a simple coral costume, standing upright with arms folded close, full-body profile.",
+      "bbox": [
+        -285,
+        -520,
+        245,
+        -280
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Panel two: the same dancer beginning to transform, arms opening as delicate golden branches emerge from the shoulders, full body.",
+      "bbox": [
+        -285,
+        -250,
+        245,
+        -10
+      ]
+    },
+    {
+      "label": "character",
+      "caption": "Panel three: the same dancer mid-transformation, elongated limbs becoming luminous branches and coral blossoms swirling around the torso.",
+      "bbox": [
+        -285,
+        10,
+        245,
+        250
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "Panel four: a fully transformed elegant celestial tree retaining the dancer's graceful pose, gold branches, coral flowers and roots floating above the floor.",
+      "bbox": [
+        -285,
+        280,
+        245,
+        520
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Small gold stage label.",
+      "bbox": [
+        272,
+        -520,
+        345,
+        -280
+      ],
+      "text": "I / STILLNESS"
+    },
+    {
+      "label": "text",
+      "caption": "Small gold stage label.",
+      "bbox": [
+        272,
+        -250,
+        345,
+        -10
+      ],
+      "text": "II / OPENING"
+    },
+    {
+      "label": "text",
+      "caption": "Small gold stage label.",
+      "bbox": [
+        272,
+        10,
+        345,
+        250
+      ],
+      "text": "III / BLOOM"
+    },
+    {
+      "label": "text",
+      "caption": "Small gold stage label.",
+      "bbox": [
+        272,
+        280,
+        345,
+        520
+      ],
+      "text": "IV / BECOMING"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}

@@ -1,0 +1,80 @@
+{
+  "width": 1024,
+  "height": 1024,
+  "summary": {
+    "meta": [
+      "social media",
+      "Surreal idea-garden carousel cover"
+    ],
+    "canvas": "single",
+    "caption": "Imaginative square educational-carousel cover showing a tiny cultivated world growing from an open human profile, with oversized modernist typography, labelled visual metaphors and a vivid cobalt, acid yellow and coral palette."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Tiny acid-yellow uppercase series marker in the upper-left with wide tracking.",
+      "bbox": [
+        -465,
+        -455,
+        -405,
+        115
+      ],
+      "text": "FIELD GUIDE / 01"
+    },
+    {
+      "label": "text",
+      "caption": "Enormous warm-white condensed headline stacked tightly, occupying the upper-left and remaining readable at phone size.",
+      "bbox": [
+        -370,
+        -455,
+        -105,
+        160
+      ],
+      "text": "HOW\nIDEAS\nGROW"
+    },
+    {
+      "label": "character",
+      "caption": "Elegant side-profile portrait of a curious young creative against saturated cobalt; the top of the head opens like a clean paper cutaway, calm expressive face, editorial collage realism.",
+      "bbox": [
+        -250,
+        20,
+        455,
+        455
+      ]
+    },
+    {
+      "label": "object",
+      "caption": "A miniature impossible garden emerging from the open profile: branching coral paths, tiny research tables, luminous seed ideas, ladders and one bright yellow tree, richly detailed yet coherent, tactile paper-collage style.",
+      "bbox": [
+        -350,
+        -40,
+        145,
+        450
+      ]
+    },
+    {
+      "label": "text",
+      "caption": "Bold cobalt-on-acid-yellow footer capsule with a clear swipe cue.",
+      "bbox": [
+        385,
+        -455,
+        465,
+        20
+      ],
+      "text": "5 CONDITIONS FOR BETTER THINKING"
+    },
+    {
+      "label": "text",
+      "caption": "Small warm-white directional label aligned at the lower-right.",
+      "bbox": [
+        400,
+        215,
+        455,
+        455
+      ],
+      "text": "SWIPE TO CULTIVATE  →"
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}
