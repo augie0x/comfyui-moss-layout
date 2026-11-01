@@ -36,10 +36,14 @@ def _read_root(root, user):
     categories = {}
     if not root.is_dir():
         return categories
-    for folder in sorted(p for p in root.iterdir() if p.is_dir()):
+    for folder in sorted(p for p in root.iterdir() if p.is_dir() and not p.name.startswith(".")):
         meta = _read_json(folder / CATEGORY_FILE) if user else None
         entries = []
-        for path in sorted(folder.glob("*.json")):
+        try:
+            paths = sorted(folder.glob("*.json"))
+        except OSError:  # unreadable folder
+            continue
+        for path in paths:
             if path.name == CATEGORY_FILE:
                 continue
             data = _read_json(path)
