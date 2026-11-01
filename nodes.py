@@ -103,7 +103,7 @@ class MossLayoutGenerate:
             "vae": (vaes, {"default": vae_default}),
             "lora": (loras, {"default": "None", "tooltip": "Optional speed LoRA, e.g. the MOSS-Image-SFT 4-step Turbo LoRA."}),
             "lora_strength": ("FLOAT", {"default": 1.0, "min": -10.0, "max": 10.0, "step": 0.05}),
-            "steps": ("INT", {"default": 4, "min": 1, "max": 200}),
+            "steps": ("INT", {"default": 8, "min": 1, "max": 200}),
             "cfg": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 20.0, "step": 0.1}),
             "shift": ("FLOAT", {"default": 5.0, "min": 0.0, "max": 100.0, "step": 0.1}),
             "sampler_name": (comfy.samplers.KSampler.SAMPLERS, {"default": "euler"}),

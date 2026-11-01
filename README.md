@@ -12,7 +12,9 @@ It uses ComfyUI's built-in MOSS-Image support and the model files already in you
   - `models/loras` (optional): a speed LoRA, e.g. the 4-step Turbo LoRA from `akhaliq/MOSS-Image-SFT-4-steps`
 
 ## Install
-Copy this folder to `ComfyUI/custom_nodes/`, restart ComfyUI and hard-refresh the browser tab.
+Download and copy this folder to `ComfyUI/custom_nodes/`, restart ComfyUI and hard-refresh the browser tab.
+OR
+git pull into `ComfyUI/custom_nodes/`, restart ComfyUI and hard-refresh (Ctrl+F5) the browser tab.
 
 ## Node: MOSS Layout Generate (category "MOSS Layout")
 The visual editor is built into the node:
@@ -25,3 +27,7 @@ The visual editor is built into the node:
 Generation settings on the node: diffusion model, text encoder, VAE, optional LoRA and strength, steps, cfg, shift (default 5), sampler, scheduler and seed.
 With a 4-step LoRA use 4 steps and cfg 1.0; without a LoRA use more steps.
 Outputs `image` and `compiled_prompt` (the JSON prompt sent to the model).
+
+## Test
+Tested with 8 step LoRA
+
